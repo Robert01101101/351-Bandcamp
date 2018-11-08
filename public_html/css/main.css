@@ -26,6 +26,28 @@ header {
 	z-index: 200;
 }
 
+header nav {
+	height: 100%;
+}
+
+header .hdr_main_nav {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	line-height: 43px;
+}
+
+header .hdr_user_nav {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	line-height: 43px;
+}
+
+header .hdr_logo {
+	display: inline-block;
+}
+
 header .hdr_content {
 	width: calc(100%-1rem);
 	margin: 0 .5rem;
@@ -43,6 +65,19 @@ header .hdr_content ul:last-of-type {
 header .hdr_content ul li {
 	display: inline-block;
 	padding: .5rem;
+}
+
+/* Header Elements styling */
+header .hdr_btn {
+	color: #1DA0C3;
+	text-decoration: none;
+	padding: calc(1rem - 1px) .5rem 1rem .5rem;
+}
+
+header .hdr_btn:hover {
+	color: #666666;
+	background-color: #DEDEDE;
+	border-top: solid 5px #666666;
 }
 
 /* ######################################## CONTENT ##################################### */
@@ -83,6 +118,8 @@ footer .ftr_content {
 
 footer .ftr_logo {
 	display: inline-block;
+	padding: .5rem;
+	padding-left: 0;
 }
 
 footer ul {
@@ -91,7 +128,8 @@ footer ul {
 	/* padding: 0; */
 	white-space: nowrap;
 	padding: 0;
-	margin: 0 .5rem;
+	margin: 0;
+	margin-left: .5rem;
 }
 
 footer ul li {
