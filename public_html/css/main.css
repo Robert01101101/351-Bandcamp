@@ -121,7 +121,7 @@ header .hdr_btn:hover {
 	width: 100%;
 }
 
-.content {
+.product-content {
 	background-color: #F0F0F0;
 	margin:0 1rem;
 	padding-top: 4rem;
@@ -187,7 +187,7 @@ header .hdr_btn:hover {
 /* ######################################## FOOTER ##################################### */
 footer {
 	position: relative;
-
+	height: 2.5rem;
     display: block;
     width: 100%;
 
@@ -199,7 +199,7 @@ footer {
 
 footer .ftr_content {
 	width: calc(100%-1rem);
-	margin: auto .5rem;
+	margin: auto 1rem;
 	max-width:57.2rem;
 }
 
@@ -228,7 +228,7 @@ footer ul li {
 
 @media (min-width: 62.5em){
 	/* Content width breakpoint: go from (100%-1rem) to (65%) */
-	.content {
+	.product-content {
 		width: 57.2rem;
 		margin: 0 auto;
 		border-left: solid 1px #848484;
