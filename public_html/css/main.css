@@ -34,6 +34,8 @@ header {
 
 header nav {
 	height: 100%;
+	max-width:915px;
+	margin: auto auto;
 }
 
 header .hdr_main_nav {
@@ -169,7 +171,8 @@ footer {
 
 footer .ftr_content {
 	width: calc(100%-1rem);
-	margin: 0 .5rem;
+	margin: auto .5rem;
+	max-width:915px;
 }
 
 footer .ftr_logo {
