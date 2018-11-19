@@ -121,12 +121,28 @@ header .hdr_btn:hover {
 	width: 100%;
 }
 
-.product-content {
+.content-box{
+	
+	border:#DEDEDE 1px solid;
+	border-radius: .3rem;
+	padding:1rem;
+	margin:1rem;
+}
+
+.content{
+
 	background-color: #F0F0F0;
 	margin:0 1rem;
 	padding-top: 4rem;
 	padding-bottom:1rem;
 	width: 100%;
+}
+
+
+/* ######################################## PRODUCT CONTENT ##################################### */
+
+.product-content {
+
 	display:grid;
 	grid-template-areas: 
 		"albumart albumdesc"
@@ -135,14 +151,6 @@ header .hdr_btn:hover {
 	grid-auto-rows: auto;
 	grid-template-columns: 1fr 1fr;
 
-}
-
-.content-box{
-	
-	border:#DEDEDE 1px solid;
-	border-radius: .3rem;
-	padding:1rem;
-	margin:1rem;
 }
 
 .album-art{
@@ -183,6 +191,16 @@ header .hdr_btn:hover {
 	width:100%;
 }
 
+/* ######################################## FEED CONTENT ##################################### */
+
+.feed-content {
+	display:grid;
+	grid-template-areas: 
+		"mainfeed releasefeed";
+	grid-auto-rows: auto;
+	grid-template-columns: 2fr 1fr;
+
+}
 
 /* ######################################## FOOTER ##################################### */
 footer {
@@ -228,7 +246,7 @@ footer ul li {
 
 @media (min-width: 62.5em){
 	/* Content width breakpoint: go from (100%-1rem) to (65%) */
-	.product-content {
+	.content {
 		width: 57.2rem;
 		margin: 0 auto;
 		border-left: solid 1px #848484;
