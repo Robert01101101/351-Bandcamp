@@ -9,6 +9,36 @@ body {
 	margin: 0;
 }
 
+img, div{
+	line-height: 0;
+}
+
+.image-fit{
+	
+  width: 100%;
+  
+}
+
+p{
+	font-size: 1rem;
+}
+
+h1, h2, h3, h4{
+	margin-top:0;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.5rem;
+}
+
 /* ######################################## HEADER ##################################### */
 header {
 	position: fixed;
@@ -24,6 +54,30 @@ header {
 	width: 100%;
 
 	z-index: 200;
+}
+
+header nav {
+	height: 100%;
+	max-width:57.2rem;
+	margin: auto auto;
+}
+
+header .hdr_main_nav {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	line-height: 43px;
+}
+
+header .hdr_user_nav {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	line-height: 43px;
+}
+
+header .hdr_logo {
+	display: inline-block;
 }
 
 header .hdr_content {
@@ -45,28 +99,113 @@ header .hdr_content ul li {
 	padding: .5rem;
 }
 
+/* Header Elements styling */
+header .hdr_btn {
+	color: #1DA0C3;
+	text-decoration: none;
+	padding: calc(1rem - 1px) .5rem 1rem .5rem;
+}
+
+header .hdr_btn:hover {
+	color: #666666;
+	background-color: #DEDEDE;
+	border-top: solid 5px #666666;
+}
+
 /* ######################################## CONTENT ##################################### */
 .background {
-	position: absolute;
-	top: 43px;
-
+	position: relative;
+	
 	background-color: #F0F0F0;
 	min-height: 10rem;
 	width: 100%;
 }
 
-.content {
-	background-color: #F0F0F0;
-	min-height: 10rem;
-	width: calc(100%-1rem);
-	margin: 0 .5rem;
+.content-box{
 	
+	border:#DEDEDE 1px solid;
+	border-radius: .3rem;
+	padding:1rem;
+	margin:1rem;
+}
+
+.content{
+
+	background-color: #F0F0F0;
+	margin:0 1rem;
+	padding-top: 4rem;
+	padding-bottom:1rem;
+	width: 100%;
+}
+
+
+/* ######################################## PRODUCT CONTENT ##################################### */
+
+.product-content {
+
+	display:grid;
+	grid-template-areas: 
+		"albumart albumdesc"
+		"tracklist tracklist"
+		"albumlist supporters";
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.album-art{
+	grid-area: albumart;
+}
+.album-desc{
+	grid-area: albumdesc;
+}
+.track-list{
+	grid-area: tracklist;
+}
+.album-list{
+	grid-area: albumlist;
+}
+
+.album-suggestion-grid{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	gap: 0.5rem;
+}
+.album-suggestion-grid > img{
+	width:100%;
+}
+
+.supporters{
+	grid-area: supporters;
+}
+
+.supporters-grid{
+	display:grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: auto;
+	gap: 0.5rem;
+}
+
+.supporters-grid > img{
+	width:100%;
+}
+
+/* ######################################## FEED CONTENT ##################################### */
+
+.feed-content {
+	display:grid;
+	grid-template-areas: 
+		"mainfeed releasefeed";
+	grid-auto-rows: auto;
+	grid-template-columns: 2fr 1fr;
+
 }
 
 /* ######################################## FOOTER ##################################### */
 footer {
-	position: absolute;
-    bottom: 0;
+	position: relative;
+	height: 2.5rem;
     display: block;
     width: 100%;
 
@@ -78,11 +217,14 @@ footer {
 
 footer .ftr_content {
 	width: calc(100%-1rem);
-	margin: 0 .5rem;
+	margin: auto 1rem;
+	max-width:57.2rem;
 }
 
 footer .ftr_logo {
 	display: inline-block;
+	padding: .5rem;
+	padding-left: 0;
 }
 
 footer ul {
@@ -91,7 +233,8 @@ footer ul {
 	/* padding: 0; */
 	white-space: nowrap;
 	padding: 0;
-	margin: 0 .5rem;
+	margin: 0;
+	margin-left: .5rem;
 }
 
 footer ul li {
@@ -101,13 +244,16 @@ footer ul li {
 
 /* ##################################### MEDIA QUERIES ##################################### */
 
-@media (min-width: 80em){
+@media (min-width: 62.5em){
 	/* Content width breakpoint: go from (100%-1rem) to (65%) */
 	.content {
-		width: 65%;
+		width: 57.2rem;
 		margin: 0 auto;
 		border-left: solid 1px #848484;
 		border-right: solid 1px #848484;
+		padding-top: 4rem;
+		padding-bottom:1rem;
+		max-width:57.2rem;
 	}
 	footer .ftr_content {
 		width: 65%;
