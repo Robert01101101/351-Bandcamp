@@ -260,7 +260,7 @@ header .hdr_btn:hover {
 
 .overlay-content .button-container{
 	position:absolute;
-	top: 79%;
+	top: 77%;
 	left: 50%;
 	width:60%;
 	transform: translate(-50%, -50%);
@@ -280,6 +280,13 @@ header .hdr_btn:hover {
 	margin-right: auto;
 	transition:color 0.3s;
 	transition:background-color 0.3s;
+}
+
+.overlay-content .favorite{
+	width: 16%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .overlay-content .button-container .album-card-button:hover{
