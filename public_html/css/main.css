@@ -9,6 +9,36 @@ body {
 	margin: 0;
 }
 
+img, div{
+	line-height: 0;
+}
+
+.image-fit{
+	
+  width: 100%;
+  
+}
+
+p{
+	font-size: 1rem;
+}
+
+h1, h2, h3, h4{
+	margin-top:0;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.5rem;
+}
+
 /* ######################################## HEADER ##################################### */
 header {
 	position: fixed;
@@ -28,6 +58,8 @@ header {
 
 header nav {
 	height: 100%;
+	max-width:60rem;
+	margin: auto auto;
 }
 
 header .hdr_main_nav {
@@ -82,26 +114,143 @@ header .hdr_btn:hover {
 
 /* ######################################## CONTENT ##################################### */
 .background {
-	position: absolute;
-	top: 43px;
-
+	position: relative;
+	
 	background-color: #F0F0F0;
 	min-height: 10rem;
 	width: 100%;
 }
 
-.content {
-	background-color: #F0F0F0;
-	min-height: 10rem;
-	width: calc(100%-1rem);
-	margin: 0 .5rem;
+.content-box{
 	
+	border:#DEDEDE 1px solid;
+	border-radius: .3rem;
+	padding:1rem;
+	margin:1rem;
+}
+
+.content{
+
+	background-color: #F0F0F0;
+	margin:0 1rem;
+	padding-top: 4rem;
+	padding-bottom:1rem;
+	width: 100%;
+}
+
+
+/* ######################################## PRODUCT CONTENT ##################################### */
+
+.product-content {
+
+	display:grid;
+	grid-template-areas: 
+		"albumart albumdesc"
+		"tracklist tracklist"
+		"albumlist supporters";
+	grid-auto-rows: auto;
+	grid-template-columns: 1fr 1fr;
+
+}
+
+.album-art{
+	grid-area: albumart;
+}
+.album-desc{
+	grid-area: albumdesc;
+}
+.track-list{
+	grid-area: tracklist;
+}
+.album-list{
+	grid-area: albumlist;
+}
+
+.album-suggestion-grid{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	gap: 0.5rem;
+}
+.album-suggestion-grid > img{
+	width:100%;
+}
+
+.supporters{
+	grid-area: supporters;
+}
+
+.supporters-grid{
+	display:grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: auto;
+	gap: 0.5rem;
+}
+
+.supporters-grid > img{
+	width:100%;
+}
+
+/* ######################################## ALBUM OVERLAY CONTENT ##################################### */
+
+.overlay-container{
+	width:100%;
+	position:relative;
+}
+
+.overlay-background{
+	opacity:0;
+	background-color: black;
+	width:100%;
+	height:100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	transition: opacity 0.3s;
+}
+
+
+.overlay-content{
+	opacity:0;
+	color: white;
+	width:100%;
+	height:100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	transition: opacity 0.3s;
+}
+
+.overlay-container:hover .overlay-content {
+	opacity:1;
+	transition: opacity 0.3s;
+}
+.overlay-container:hover .overlay-background{
+	opacity:0.5;
+	transition: opacity 0.3s;
+}
+
+/* ######################################## FEED CONTENT ##################################### */
+
+.feed-content {
+	display:grid;
+	grid-template-areas: 
+		"mainfeed releasefeed";
+	grid-auto-rows: auto;
+	grid-template-columns: 2fr 1fr;
+
 }
 
 /* ######################################## FOOTER ##################################### */
 footer {
-	position: absolute;
-    bottom: 0;
+	position: relative;
+	height: 2.5rem;
     display: block;
     width: 100%;
 
@@ -113,7 +262,8 @@ footer {
 
 footer .ftr_content {
 	width: calc(100%-1rem);
-	margin: 0 .5rem;
+	margin: auto 1rem;
+	max-width:60rem;
 }
 
 footer .ftr_logo {
@@ -139,13 +289,16 @@ footer ul li {
 
 /* ##################################### MEDIA QUERIES ##################################### */
 
-@media (min-width: 80em){
+@media (min-width: 62.5em){
 	/* Content width breakpoint: go from (100%-1rem) to (65%) */
 	.content {
-		width: 65%;
+		width: 60rem;
 		margin: 0 auto;
 		border-left: solid 1px #848484;
 		border-right: solid 1px #848484;
+		padding-top: 4rem;
+		padding-bottom:1rem;
+		max-width:60rem;
 	}
 	footer .ftr_content {
 		width: 65%;
