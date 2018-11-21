@@ -58,7 +58,7 @@ header {
 
 header nav {
 	height: 100%;
-	max-width:57.2rem;
+	max-width:60rem;
 	margin: auto auto;
 }
 
@@ -191,6 +191,51 @@ header .hdr_btn:hover {
 	width:100%;
 }
 
+/* ######################################## ALBUM OVERLAY CONTENT ##################################### */
+
+.overlay-container{
+	width:100%;
+	position:relative;
+}
+
+.overlay-background{
+	opacity:0;
+	background-color: black;
+	width:100%;
+	height:100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	transition: opacity 0.3s;
+}
+
+
+.overlay-content{
+	opacity:0;
+	color: white;
+	width:100%;
+	height:100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	transition: opacity 0.3s;
+}
+
+.overlay-container:hover .overlay-content {
+	opacity:1;
+	transition: opacity 0.3s;
+}
+.overlay-container:hover .overlay-background{
+	opacity:0.5;
+	transition: opacity 0.3s;
+}
+
 /* ######################################## FEED CONTENT ##################################### */
 
 .feed-content {
@@ -218,7 +263,7 @@ footer {
 footer .ftr_content {
 	width: calc(100%-1rem);
 	margin: auto 1rem;
-	max-width:57.2rem;
+	max-width:60rem;
 }
 
 footer .ftr_logo {
@@ -247,13 +292,13 @@ footer ul li {
 @media (min-width: 62.5em){
 	/* Content width breakpoint: go from (100%-1rem) to (65%) */
 	.content {
-		width: 57.2rem;
+		width: 60rem;
 		margin: 0 auto;
 		border-left: solid 1px #848484;
 		border-right: solid 1px #848484;
 		padding-top: 4rem;
 		padding-bottom:1rem;
-		max-width:57.2rem;
+		max-width:60rem;
 	}
 	footer .ftr_content {
 		width: 65%;
