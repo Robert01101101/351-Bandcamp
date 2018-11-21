@@ -141,12 +141,14 @@ header .hdr_btn:hover {
 
 /* ######################################## PRODUCT CONTENT ##################################### */
 
+/*Grid system reference: https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-template-areas*/
+
 .product-content {
 
 	display:grid;
 	grid-template-areas: 
-		"albumart albumdesc"
-		"tracklist tracklist"
+		"albumart tracklist"
+		"albumdesc albumdesc"
 		"albumlist supporters";
 	grid-auto-rows: auto;
 	grid-template-columns: 1fr 1fr;
@@ -193,6 +195,8 @@ header .hdr_btn:hover {
 
 /* ######################################## ALBUM OVERLAY CONTENT ##################################### */
 
+/* Overlay reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
+
 .overlay-container{
 	width:100%;
 	position:relative;
@@ -223,8 +227,66 @@ header .hdr_btn:hover {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-	text-align: center;
 	transition: opacity 0.3s;
+
+	padding: 1rem;
+}
+
+.overlay-content h2{
+	margin-left:1rem;
+	margin-top:1rem;
+	margin-bottom:0;
+}
+
+.overlay-content h4{
+	margin-left:1rem;
+}
+
+.overlay-content .play-arrow{
+	position:absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.overlay-content .track-title{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.overlay-content .button-container{
+	position:absolute;
+	top: 79%;
+	left: 50%;
+	width:60%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.overlay-content .button-container .album-card-button{
+	color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: solid white 2px;
+    margin: 0.5rem;
+    margin-left: auto;
+	margin-right: auto;
+	transition:color 0.3s;
+	transition:background-color 0.3s;
+}
+
+.overlay-content .button-container .album-card-button:hover{
+	background-color:white;
+	color:black;
+	transition:color 0.3s;
+	transition:background-color 0.3s;
 }
 
 .overlay-container:hover .overlay-content {
