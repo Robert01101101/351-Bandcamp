@@ -122,11 +122,12 @@ header .hdr_btn:hover {
 }
 
 .content-box{
-	
+	position:relative;
 	border:#DEDEDE 1px solid;
 	border-radius: .3rem;
 	padding:1rem;
 	margin:1rem;
+	
 }
 
 .content{
@@ -164,6 +165,15 @@ header .hdr_btn:hover {
 .track-list{
 	grid-area: tracklist;
 }
+
+.track-list h2{
+	margin-bottom:0;
+}
+.track-list h4{
+	margin-top:0;
+}
+
+
 .album-list{
 	grid-area: albumlist;
 }
@@ -242,12 +252,23 @@ header .hdr_btn:hover {
 	margin-left:1rem;
 }
 
-.overlay-content .play-arrow{
+.overlay-content .album-music-controls{
 	position:absolute;
 	top: 40%;
 	left: 50%;
+	width:100%;
+	text-align:center;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
+}
+
+.album-music-controls img{
+    display: inline;
+    vertical-align: middle;
+}
+
+.skip-next, .skip-prev{
+	width:4rem;
 }
 
 .overlay-content .track-title{
@@ -260,7 +281,7 @@ header .hdr_btn:hover {
 
 .overlay-content .button-container{
 	position:absolute;
-	top: 79%;
+	top: 77%;
 	left: 50%;
 	width:60%;
 	transform: translate(-50%, -50%);
@@ -280,6 +301,31 @@ header .hdr_btn:hover {
 	margin-right: auto;
 	transition:color 0.3s;
 	transition:background-color 0.3s;
+}
+
+.overlay-content .favorite{
+	width: 16%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.move-icon{
+	position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    padding: 1rem;
+    opacity: 0;
+}
+
+.content-box > .move-icon{
+	top:0;
+	right:0
+}
+
+.content-box:hover .move-icon{
+	opacity:0.4;
 }
 
 .overlay-content .button-container .album-card-button:hover{
