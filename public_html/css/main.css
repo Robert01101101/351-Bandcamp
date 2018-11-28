@@ -148,11 +148,14 @@ header .hdr_btn:hover {
 
 	display:grid;
 	grid-template-areas: 
-		"albumart tracklist"
-		"albumdesc albumdesc"
-		"albumlist supporters";
+		"albumart"
+		"tracklist"
+		"albumdesc"
+		"albumpurchase"
+		"albumlist"
+		"supporters";
 	grid-auto-rows: auto;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 
 }
 
@@ -162,6 +165,11 @@ header .hdr_btn:hover {
 .album-desc{
 	grid-area: albumdesc;
 }
+
+.album-desc h2{
+	margin-bottom:0;
+}
+
 .track-list{
 	grid-area: tracklist;
 }
@@ -171,6 +179,10 @@ header .hdr_btn:hover {
 }
 .track-list h4{
 	margin-top:0;
+}
+
+.album-purchase{
+	grid-area: albumpurchase;
 }
 
 
@@ -335,11 +347,11 @@ header .hdr_btn:hover {
 	transition:background-color 0.3s;
 }
 
-.overlay-container:hover .overlay-content {
+.overlay-content {
 	opacity:1;
 	transition: opacity 0.3s;
 }
-.overlay-container:hover .overlay-background{
+.overlay-background{
 	opacity:0.5;
 	transition: opacity 0.3s;
 }
@@ -408,6 +420,34 @@ footer ul li {
 		padding-bottom:1rem;
 		max-width:60rem;
 	}
+
+	.product-content {
+
+		display:grid;
+		grid-template-areas: 
+			"albumart tracklist"
+			"albumdesc albumpurchase"
+			"albumlist supporters";
+		grid-auto-rows: auto;
+		grid-template-columns: 1fr 1fr;
+	
+	}
+	.overlay-background{
+		opacity:0;
+	}
+	.overlay-content{
+		opacity:0;
+	}
+
+	.overlay-container:hover .overlay-content {
+		opacity:1;
+		transition: opacity 0.3s;
+	}
+	.overlay-container:hover .overlay-background{
+		opacity:0.5;
+		transition: opacity 0.3s;
+	}
+
 	footer .ftr_content {
 		width: 65%;
 		margin: 0 auto;
