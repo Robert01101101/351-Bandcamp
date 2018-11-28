@@ -78,6 +78,11 @@ ol{
 	color:black;
 }
 
+hr{
+	margin-top:1rem;
+	margin-bottom:1rem;
+}
+
 /* ######################################## HEADER ##################################### */
 header {
 	position: fixed;
@@ -215,6 +220,7 @@ header .hdr_btn:hover {
 
 .track-list ol{
 	margin-top:0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .track-list h2{
