@@ -247,6 +247,21 @@ header .hdr_btn:hover {
 	vertical-align:top;
 }
 
+.album-music-controls.tracksoutside{
+	display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.album-music-controls.tracksoutside img{
+	width:2rem;
+}
+
+.now-playing{
+	text-align: center;
+	margin-top:0.3rem;
+}
+
 .album-purchase{
 	grid-area: albumpurchase;
 }
