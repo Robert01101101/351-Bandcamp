@@ -39,6 +39,45 @@ h3{
 	font-size: 1.5rem;
 }
 
+.sub-desc{
+	font-size: 12px;
+    font-weight: normal;
+    margin: 4px 0 0;
+}
+
+ol{
+	padding-inline-start: 1.1rem;
+}
+
+.button-primary{
+	background:white;
+	display: inline-block;
+    padding: 0.5rem 1rem;
+    border: solid black 2px;
+	margin: 0.5rem;
+	margin-left:0;
+	transition:color 0.3s;
+	transition:background-color 0.3s;
+	color:black;
+	text-decoration:none;
+}
+
+.button-primary:hover{
+	background:black;
+	border: solid black 2px;
+	color:white;
+}
+
+.button-secondary{
+	text-decoration:none;
+	color:#888888
+}
+
+.button-secondary:hover{
+	text-decoration:underline;
+	color:black;
+}
+
 /* ######################################## HEADER ##################################### */
 header {
 	position: fixed;
@@ -174,11 +213,32 @@ header .hdr_btn:hover {
 	grid-area: tracklist;
 }
 
+.track-list ol{
+	margin-top:0.5rem;
+}
+
 .track-list h2{
 	margin-bottom:0;
 }
-.track-list h4{
+.track-list .artists-name{
 	margin-top:0;
+}
+
+.track-list .tracklist-title{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.track-list .broke-list{
+	display: inline-block;
+	width: 45%;
+	margin-top:0;
+}
+.track-list .broke-list:last-of-type{
+	display: inline-block;
+	width: 45%;
+	margin-left:1rem;
+	vertical-align:top;
 }
 
 .album-purchase{
@@ -213,6 +273,10 @@ header .hdr_btn:hover {
 
 .supporters-grid > img{
 	width:100%;
+}
+
+.purchase-box h4{
+	margin-bottom:0;
 }
 
 /* ######################################## ALBUM OVERLAY CONTENT ##################################### */
@@ -319,7 +383,12 @@ header .hdr_btn:hover {
 	width: 16%;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+}
+
+.overlay-content .favorite:hover{
+	cursor:pointer;
+	opacity:0.75;
 }
 
 .move-icon{
@@ -426,7 +495,7 @@ footer ul li {
 		display:grid;
 		grid-template-areas: 
 			"albumart tracklist"
-			"albumdesc albumpurchase"
+			"albumdesc tracklist"
 			"albumlist supporters";
 		grid-auto-rows: auto;
 		grid-template-columns: 1fr 1fr;
