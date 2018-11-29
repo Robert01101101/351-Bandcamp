@@ -408,7 +408,7 @@ footer ul li {
 
 /* ##################################### ROBERTS ADDITIONS -> FEED CONTENT ##################################### */
 /* ######################## Feed: General  ###################*/
-.feed-content h4 {
+.feed-content > .content-box > h4 {
 	border-bottom: 1px solid #D5DADB;
 	margin-block-end: 1em;
 }
@@ -421,10 +421,16 @@ footer ul li {
 	margin-bottom: 1rem;
 }
 
+.main-feed .album-art {
+	width: 50%;
+}
+
 /* ############# Feed: Releases (New and Notable)  ###########*/
 /* ----- GENERAL -----*/
 .release-feed {
 	height: fit-content;
+	position: sticky;
+	top: 5rem;
 }
 
 .release-feed > .grid-container {
