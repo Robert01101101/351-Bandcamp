@@ -500,15 +500,19 @@ footer ul li {
 	top: 0;
 	left: 0;
 	transform: translate(0);
-	height: 100%;
-	display: flex;
-    align-items: center;
+	display: block;
+    text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .release-feed .album-music-controls img{
+	display: inline-block;
 	transform: scale(2);
 	position: static;
-	width: 1rem;
-	line-height: 100%;
-	margin-left: 1.1rem;
+	width: 15%;
+	padding: 5%;
+}
+.release-feed .album-music-controls img:nth-of-type(2) {
+	width: 20%;
 }
