@@ -52,7 +52,7 @@
                 <!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
                 <div class="album-music-controls">
                   <img class="skip-prev" src="img/skip-prev.png">
-                  <img class="play-arrow" src="img/play-arrow.png">
+                  <img id="playbutt" class="play-arrow" src="img/play-arrow.png">
                   <img class="skip-next" src="img/skip-next.png">
                 </div>
 
@@ -60,7 +60,7 @@
                 <div class="button-container">
                   <a class="album-card-button" href="#">Why do you love this album?</a>
                   <a class="album-card-button download" href="#">Download</a>
-                  <img class="favorite" src="img/favorite-border.png">
+                  <img id="favorite" class="favorite" src="img/favorite-border.png">
                 </div>
                 <img class="move-icon" src="img/move-icon.png">
 
@@ -70,27 +70,99 @@
           </div>
           <div class="content-box album-desc">
             <img class="move-icon" src="img/move-icon-black.png">
-            
+            <h2>Description</h2>
+            <p>All songs written and played by Marisa Anderson on guitar, lap steel, pedal steel, electric piano and percussion. Leaving Appalachia and the Delta blues behind Anderson journeys west, into the heart of the sun. Written as the soundtrack to an imaginary science-fiction western film, the record’s ten songs trace the story of a visitor lost and wandering on the shifting borderlands of the Sonoran desert.
+            credits</p>
+            <p>released June 24, 2016</p>
+
+            <p>Recorded by Marisa Anderson at the Parts and Service Department<br>
+            Mixed by Jesse Munro Johnson<br>
+            Mastered by Timothy Stollenwerk at Stereophonic Mastering<br>
+            Cover design by Jodi Darby<br>
+            copyright 2016<br>
+            license</p>
+            <p>all rights reserved</p>
           </div>
+          
           <div class="content-box track-list">
             <img class="move-icon" src="img/move-icon-black.png">
 
             <h2 class="album-title">Into the Light</h2>
             <h4 class="artists-name">Marisa Anderson</h4>
 
-            <h4>Tracklist</h4>
+            <div id="waveform">
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+              <div class="soundbar"></div>
+
+            </div>
+
+            <div class="album-music-controls tracksoutside">
+                <img class="skip-prev" src="img/skip-prev-black.png">
+                <img id="playbuttblack" class="play-arrow" src="img/play-arrow-black.png">
+                <img class="skip-next" src="img/skip-next-black.png">
+                
+              </div>
+              <p class="now-playing"><strong>3. Waltz of Shadows</strong></p>
+            <h4 class="tracklist-title">Tracklist</h4>
             <ol>
-              <li>Into the Light</li>
-              <li>In Waves</li>
-              <li>Waltz of Shadows</li>
-              <li>The Old Guard</li>
-              <li>He is Without His Guns</li>
-              <li>Chimes</li>
-              <li>Ressurection</li>
-              <li>House of the Setting Sun</li>
-              <li>The Golden West</li>
-              <li>End of the Night</li>
+              <div class="broke-list">
+                <li>Into the Light</li>
+                <li>In Waves</li>
+                <li>Waltz of Shadows</li>
+                <li>The Old Guard</li>
+                <li>He is Without His Guns</li>
+                <li>Chimes</li>
+              </div>
+              <div class="broke-list">
+                
+                <li>Ressurection</li>
+                <li>House of the Setting Sun</li>
+                <li>The Golden West</li>
+                <li>End of the Night</li>
+            </div>
             </ol>
+            <hr>
+            <div class="purchase-box">
+              <h4>Digital Album</h4>
+              <p class="sub-desc">Streaming + Download</p>
+              <p>Includes unlimited streaming via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</p>
+              <a href="#" class="button-primary" id="buyalbum"><strong>12$</strong> - Buy for Me</a>
+              <a href="#" class="button-secondary">Send as Gift</a>
+            </div>
+            <hr>
+            <div class="purchase-box">
+              <h4>Vinyl Red Swirl </h4>
+              <p class="sub-desc">Streaming + Download</p>
+              <p>Includes unlimited streaming via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</p>
+              <a href="#" class="button-primary"><strong>25$</strong> - Buy for Me</a>
+              <a href="#" class="button-secondary">Send as Gift</a>
+            </div>
+            <hr>
+            <div class="purchase-box">
+                <h4>Full Discography</h4>
+                <p class="sub-desc">Streaming + Download</p>
+                <p>Includes unlimited streaming via the free Bandcamp app, plus high-quality downloads of all of Marisa Anderson's albums.</p>
+                <a href="#" class="button-primary"><strong>60$</strong> - Buy for Me</a>
+                <a href="#" class="button-secondary">Send as Gift</a>
+              </div>
           </div>
           <div class="content-box album-list">
             <img class="move-icon" src="img/move-icon-black.png">
@@ -175,6 +247,7 @@
           </ul>
         </div>
       </footer>
+      <script src="misc.js"></script>
 </body>
 
 </html>
