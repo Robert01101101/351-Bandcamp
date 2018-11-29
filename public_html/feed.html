@@ -42,84 +42,135 @@
 
 	<div class="background">
 		<div class="content feed-content">
-			<!------------------------------ Main Feed --------------------------------------->
+			<!-------------------------------------- Main Feed -------------------------------------->
 			<div class="main-feed content-box">
 				<h4>Feed</h4>
-				<div class="overlay-container">
-		              <img class="image-fit album" src="img/albumart1.jpg">
-		              <div class="overlay-background"></div>
-            	</div>
+				<div class="content-box album-art"> <!-- Feed Tile 1 -->
+					<div class="overlay-container">
+						<img class="image-fit album" src="img/albumart1.jpg">
+						<div class="overlay-background"></div>
+						<div class="overlay-content">
+							<h2>Into the Light</h2>
+							<h4>Marisa Anderson</h4>
+							<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+							<div class="album-music-controls">
+								<img class="skip-prev" src="img/skip-prev.png">
+								<img class="play-arrow" src="img/play-arrow.png">
+								<img class="skip-next" src="img/skip-next.png">
+							</div>
+							<p class="track-title">3. Waltz of Shadows 3:12</p>
+							<div class="button-container">
+								<a class="album-card-button" href="#">Why do you love this album?</a>
+								<a class="album-card-button download" href="#">Download</a>
+								<img class="favorite" src="img/favorite-border.png">
+							</div>
+						</div>
 
-            	<div class="overlay-container">
-		              <img class="image-fit album" src="img/albumart1.jpg">
-		              <div class="overlay-background"></div>
-            	</div>
-            	<div class="overlay-container">
-		              <img class="image-fit album" src="img/albumart1.jpg">
-		              <div class="overlay-background"></div>
-            	</div>
-            	<div class="overlay-container">
-		              <img class="image-fit album" src="img/albumart1.jpg">
-		              <div class="overlay-background"></div>
-            	</div>
-            	<div class="overlay-container">
-		              <img class="image-fit album" src="img/albumart1.jpg">
-		              <div class="overlay-background"></div>
-            	</div>
-            	<div class="overlay-container">
-		              <img class="image-fit album" src="img/albumart1.jpg">
-		              <div class="overlay-background"></div>
-            	</div>
-            	<div class="overlay-container">
-		              <img class="image-fit album" src="img/albumart1.jpg">
-		              <div class="overlay-background"></div>
-            	</div>
+					</div>
+				</div>
+
+            	<div class="content-box album-art"> <!-- Feed Tile 2 -->
+					<div class="overlay-container">
+						<img class="image-fit album" src="img/albumart1.jpg">
+						<div class="overlay-background"></div>
+						<div class="overlay-content">
+							<h2>Into the Light</h2>
+							<h4>Marisa Anderson</h4>
+							<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+							<div class="album-music-controls">
+								<img class="skip-prev" src="img/skip-prev.png">
+								<img class="play-arrow" src="img/play-arrow.png">
+								<img class="skip-next" src="img/skip-next.png">
+							</div>
+							<p class="track-title">3. Waltz of Shadows 3:12</p>
+							<div class="button-container">
+								<a class="album-card-button" href="#">Why do you love this album?</a>
+								<a class="album-card-button download" href="#">Download</a>
+								<img class="favorite" src="img/favorite-border.png">
+							</div>
+						</div>
+
+					</div>
+				</div>
 			</div>
 
-			<!---------------------------- Release Feed -------------------------------------->
+			<!----------------------------------- Release Feed (New & Notable) ------------------------------------>
 			<div class="release-feed content-box">
 				<h4>New and Notable</h4>
-				<div class="content-box album-art">
-					<a href="#">
-			            <div class="overlay-container">
-			              <img class="image-fit album" src="img/albumart1.jpg">
-			              <div class="overlay-background"></div>
-		            	</div>
-	            	</a>
-	            	<a href="product_page.html" class="release-feed-metadata"><h5>Title</h5></a>
-	            	<a href="#" class="release-feed-metadata"><h5>Artist</h5></a>
-	          	</div>
-	          	<div class="content-box album-art">
-	          		<a href="#">
-			            <div class="overlay-container">
-			              <img class="image-fit album" src="img/albumart1.jpg">
-			              <div class="overlay-background"></div>
-		            	</div>
-	            	</a>
-	            	<a href="product_page.html" class="release-feed-metadata"><h5>Title</h5></a>
-	            	<a href="#" class="release-feed-metadata"><h5>Artist</h5></a>
-	          	</div>
-	          	<div class="content-box album-art">
-	          		<a href="#">
-			            <div class="overlay-container">
-			              <img class="image-fit album" src="img/albumart1.jpg">
-			              <div class="overlay-background"></div>
-		            	</div>
-	            	</a>
-	            	<a href="product_page.html" class="release-feed-metadata"><h5>Title</h5></a>
-	            	<a href="#" class="release-feed-metadata"><h5>Artist</h5></a>
-	          	</div>
-	          	<div class="content-box album-art">
-	          		<a href="#">
-			            <div class="overlay-container">
-			              <img class="image-fit album" src="img/albumart1.jpg">
-			              <div class="overlay-background"></div>
-		            	</div>
-	            	</a>
-	            	<a href="product_page.html" class="release-feed-metadata"><h5>Title</h5></a>
-	            	<a href="#" class="release-feed-metadata"><h5>Artist</h5></a>
-	          	</div>
 
+				<div class="grid-container">
+					<div class="content-box"><!-- New & Notable Tile 1 -->
+						<a href="#" class="album-art">
+				            <div class="overlay-container">
+				              <img class="image-fit album" src="img/albumart1.jpg">
+				              <div class="overlay-background"></div>
+				              <div class="overlay-content">
+				              	<div class="album-music-controls">
+				                  <img class="skip-prev" src="img/skip-prev.png">
+				                  <img class="play-arrow" src="img/play-arrow.png">
+				                  <img class="skip-next" src="img/skip-next.png">
+				                </div>
+				              </div>
+			            	</div>
+		            	</a>
+		            	<a href="product_page.html" class="release-feed-title"><h5>Into the Light</h5></a>
+		            	<a href="#" class="release-feed-artist"><h5>Marisa Anderson</h5></a>
+		          	</div>
+
+		          	<div class="content-box"><!-- New & Notable Tile 2 -->
+						<a href="#" class="album-art">
+				            <div class="overlay-container">
+				              <img class="image-fit album" src="img/albumart1.jpg">
+				              <div class="overlay-background"></div>
+				              <div class="overlay-content">
+				              	<div class="album-music-controls">
+				                  <img class="skip-prev" src="img/skip-prev.png">
+				                  <img class="play-arrow" src="img/play-arrow.png">
+				                  <img class="skip-next" src="img/skip-next.png">
+				                </div>
+				              </div>
+			            	</div>
+		            	</a>
+		            	<a href="product_page.html" class="release-feed-title"><h5>Title</h5></a>
+		            	<a href="#" class="release-feed-artist"><h5>Artist</h5></a>
+		          	</div>
+
+		          	<div class="content-box"><!-- New & Notable Tile 3 -->
+						<a href="#" class="album-art">
+				            <div class="overlay-container">
+				              <img class="image-fit album" src="img/albumart1.jpg">
+				              <div class="overlay-background"></div>
+				              <div class="overlay-content">
+				              	<div class="album-music-controls">
+				                  <img class="skip-prev" src="img/skip-prev.png">
+				                  <img class="play-arrow" src="img/play-arrow.png">
+				                  <img class="skip-next" src="img/skip-next.png">
+				                </div>
+				              </div>
+			            	</div>
+		            	</a>
+		            	<a href="product_page.html" class="release-feed-title"><h5>Title</h5></a>
+		            	<a href="#" class="release-feed-artist"><h5>Artist</h5></a>
+		          	</div>
+
+		          	<div class="content-box"><!-- New & Notable Tile 4 -->
+						<a href="#" class="album-art">
+				            <div class="overlay-container">
+				              <img class="image-fit album" src="img/albumart1.jpg">
+				              <div class="overlay-background"></div>
+				              <div class="overlay-content">
+				              	<div class="album-music-controls">
+				                  <img class="skip-prev" src="img/skip-prev.png">
+				                  <img class="play-arrow" src="img/play-arrow.png">
+				                  <img class="skip-next" src="img/skip-next.png">
+				                </div>
+				              </div>
+			            	</div>
+		            	</a>
+		            	<a href="product_page.html" class="release-feed-title"><h5>Title</h5></a>
+		            	<a href="#" class="release-feed-artist"><h5>Artist</h5></a>
+		          	</div>
+	          	</div>
 			</div>
 		</div>
 	</div>
