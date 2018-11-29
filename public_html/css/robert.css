@@ -223,8 +223,102 @@ header .hdr_btn:hover {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-	text-align: center;
 	transition: opacity 0.3s;
+
+	padding: 1rem;
+}
+
+.overlay-content h2{
+	margin-left:1rem;
+	margin-top:1rem;
+	margin-bottom:0;
+}
+
+.overlay-content h4{
+	margin-left:1rem;
+}
+
+.overlay-content .album-music-controls{
+	position:absolute;
+	top: 40%;
+	left: 50%;
+	width:100%;
+	text-align:center;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.album-music-controls img{
+    display: inline;
+    vertical-align: middle;
+}
+
+.skip-next, .skip-prev{
+	width:4rem;
+}
+
+.overlay-content .track-title{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.overlay-content .button-container{
+	position:absolute;
+	top: 77%;
+	left: 50%;
+	width:60%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.overlay-content .button-container .album-card-button{
+	color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: solid white 2px;
+    margin: 0.5rem;
+    margin-left: auto;
+	margin-right: auto;
+	transition:color 0.3s;
+	transition:background-color 0.3s;
+}
+
+.overlay-content .favorite{
+	width: 16%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.move-icon{
+	position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    padding: 1rem;
+    opacity: 0;
+}
+
+.content-box > .move-icon{
+	top:0;
+	right:0
+}
+
+.content-box:hover .move-icon{
+	opacity:0.4;
+}
+
+.overlay-content .button-container .album-card-button:hover{
+	background-color:white;
+	color:black;
+	transition:color 0.3s;
+	transition:background-color 0.3s;
 }
 
 .overlay-container:hover .overlay-content {
@@ -312,52 +406,103 @@ footer ul li {
 
 
 
-/* ##################################### ROBERTS NEW SHIT ##################################### */
+/* ##################################### ROBERTS ADDITIONS -> FEED CONTENT ##################################### */
+/* ######################## Feed: General  ###################*/
+.feed-content h4 {
+	border-bottom: 1px solid #D5DADB;
+	margin-block-end: 1em;
+}
 
-/* ########## Feed: Releases (New and Notable)  ########*/
-/* GENERAL */
+/* ######################### Feed: Main ######################*/
+/* ------ TILES ------*/
+.main-feed > .content-box {
+	margin: 0;
+	background-color: white;
+	margin-bottom: 1rem;
+}
+
+/* ############# Feed: Releases (New and Notable)  ###########*/
+/* ----- GENERAL -----*/
 .release-feed {
-	
 	height: fit-content;
 }
 
-/* TILES */
+.release-feed > .grid-container {
+	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: 1fr 1fr;
+  	grid-column-gap: .8rem;
+  	grid-row-gap: .8rem;
+  	width: 100%;
+  	height: fit-content;
+}
+
+/* ------ TILES ------*/
 .release-feed .content-box {
-	width: calc(50% - .5rem);
-	margin: 0 0.5rem;
-	float: left;
+	margin: 0;
 	border: none;
 	padding: 0;
 }
-
-.release-feed .content-box:nth-of-type(even) {
-	margin-right: 0;
+.release-feed .album-art {
+	cursor: default;
 }
 
-.release-feed .content-box:nth-of-type(odd) {
-	margin-left: 0;
-}
-
-.release-feed .content-box:nth-of-type(n+3) {
-	margin-top: 1rem;
-}
-
-/* METADATA */
-.release-feed h5 {
+/* ----- METADATA -----*/
+.release-feed-title, .release-feed-artist,
+.release-feed-title > h5, .release-feed-artist >h5 {
 	font-weight: normal;
 	margin: 0;
-}
-
-.release-feed .release-feed-metadata {
 	color: #505958;
 	text-decoration: none;
 }
-
-.release-feed h5:first-of-type {
+.release-feed-title > h5 {
 	margin-top: .25rem;
+	font-weight: bold;
 }
-
-.release-feed .release-feed-metadata:hover {
+.release-feed-title:hover, .release-feed-artist:hover {
 	text-decoration: underline;
 	text-decoration-color: #505958;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############# Feed - specific Album Overlays  ###########*/
+.main-feed .overlay-content .album-music-controls{
+}
+
+.main-feed .album-music-controls img{
+}
+
+
+.release-feed .overlay-content {
+	padding: 0;
+}
+
+.release-feed .overlay-content .album-music-controls{
+	top: 0;
+	left: 0;
+	transform: translate(0);
+	height: 100%;
+	display: flex;
+    align-items: center;
+}
+
+.release-feed .album-music-controls img{
+	transform: scale(2);
+	position: static;
+	width: 1rem;
+	line-height: 100%;
+	margin-left: 1.1rem;
 }
