@@ -546,7 +546,7 @@ footer ul li {
 }
 
 
-
+/* ############################################################################################################# */
 /* ##################################### ROBERTS ADDITIONS -> FEED CONTENT ##################################### */
 /* ######################## Feed: General  ###################*/
 .feed-content > .content-box > h4 {
@@ -596,8 +596,9 @@ footer ul li {
 	.hidden-button-container .favorite{
 		width: 8%;
 	    display: inline-block;
-	    transform: translate(0, 35%);
+	    transform: translate(0, 20%);
 		filter: brightness(0);
+		float: right;
 	}
 	.hidden-button-container .favorite:hover{
 		cursor:pointer;
@@ -605,6 +606,24 @@ footer ul li {
 	}
 	.hidden-button-container {
 		display: block;
+		margin-top: .5rem;
+	}
+	/*
+	.feed-grid {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 1fr;
+	}*/
+
+
+	/* JS Classes */
+	.js-playing .overlay-content {
+		opacity:1;
+		transition: opacity 0.3s;
+	}
+	.js-playing .overlay-background{
+		opacity:0.5;
+		transition: opacity 0.3s;
 	}
 }
 
@@ -628,7 +647,7 @@ footer ul li {
   	grid-template-rows: 1fr 1fr 1fr 1fr;
   	grid-row-gap: .8rem;
   	width: 100%;
-  	height: fit-content;
+
 }
 
 /* ------ TILES ------*/
@@ -700,3 +719,12 @@ footer ul li {
 	  	height: fit-content;
 	}
 }
+
+
+/* ################ Sources Used #################
+- Learning CSS Grids: https://www.w3schools.com/css/css_grid.asp
+- CSS Grids + Sticky positioning: https://codepen.io/stephanmax/pen/odyxWE
+- Layout positioning tricks: https://www.w3schools.com/css/css_align.asp
+
+
+*/
