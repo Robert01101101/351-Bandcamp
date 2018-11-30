@@ -878,17 +878,17 @@ span.date {
 	text-decoration: underline;
 }
 .edit-form {
-	transform: translate(-.1rem, .3rem);
+	transform: translate(-.08rem, .3rem);
 }
 .edit-form input:first-of-type {
 	font-size: 2rem;
 	width: auto;
 }
 .edit-form input:last-of-type {
-	margin-top: .4rem;
+	margin-top: .35rem;
 }
 .edit-form input {
-	background-color: transparent;
+	background-color: #DEDEDE;
 	border:#DEDEDE 1px solid;
 	border-radius: .3rem;
 	font-weight: bold;
