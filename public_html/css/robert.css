@@ -582,21 +582,45 @@ footer ul li {
 	display: none;
 }
 
+/* ---- Album Extras & Details ----*/
+.main-feed .hidden-details h2, 
+.main-feed .hidden-details h4,
+.main-feed .hidden-details a {
+	margin: 0;
+	color: black;
+	text-decoration: none;
+}
+
+.main-feed .hidden-details a:hover {
+	text-decoration: underline;
+}
+
+.main-feed .hidden-details .track-title {
+	margin: .5rem 0;
+	margin-bottom: 1rem;
+}
+
+.album-extras h4 {
+	font-weight: normal;
+}
+
 .hidden-tags {
 	display: none;
 }
 .hidden-tags > p {
 	margin-bottom: 0;
+	margin-top: .5rem;
 }
 
-/* ---- Album Extras & Details ----*/
-.main-feed .hidden-details h2, 
-.main-feed .hidden-details h4 {
-	margin: 0;
+.feed-supporters-grid{
+	display:grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: auto;
+	gap: 0.5rem;
 }
 
-.main-feed .hidden-details .track-title {
-	margin: .5rem 0;
+.feed-supporters-grid > img{
+	width:100%;
 }
 
 @media (min-width: 62.5em){
