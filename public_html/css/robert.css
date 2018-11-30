@@ -548,6 +548,7 @@ footer ul li {
 
 /* ############################################################################################################# */
 /* ##################################### ROBERTS ADDITIONS -> FEED CONTENT ##################################### */
+/* ############################################################################################################# */
 /* ######################## Feed: General  ###################*/
 .feed-content > .content-box > h4 {
 	border-bottom: 1px solid #D5DADB;
@@ -815,3 +816,35 @@ footer ul li {
 
 
 */
+
+
+
+
+
+
+/* ############################################################################################################# */
+/* ############################### ROBERTS ADDITIONS -> WISHLIST / COLLECTION CONTENT ########################## */
+/* ############################################################################################################# */
+.w_c-content .profile > * {
+	float: left;
+	margin: 0;
+	margin-right: 1rem;
+}
+.w_c-content .profile::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.profile .pic > img {
+	max-width: 15rem;
+}
+.profile h2 {
+	margin-bottom: 0;
+}
+.archive-seperator {
+	width: 100%;
+	border-bottom: 1px solid #D5DADB;
+}
+.hide-tab {
+	display: none;
+}

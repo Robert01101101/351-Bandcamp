@@ -9,21 +9,83 @@
 
   <!-- Loading Section -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/robert.css">
 </head>
 
 <body>
 	<header>
-		
+		<div class="hdr_content">
+			<nav>
+				<ul class="hdr_main_nav">
+					<div class="hdr_logo">
+						[LOGO]
+					</div>
+					<li>
+						<a href="javascript:void(0)" class="hdr_btn">discover</a>
+					</li>
+					<li>
+						<a href="feed.html" class="hdr_btn">feed</a>
+					</li>
+					<li>[search]</li>
+				</ul>
+				<ul class="hdr_user_nav">
+					<li>
+						<a href="wishlist_collection.html" class="hdr_btn">collection/wishlist</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="hdr_btn">[settings]</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
-	<div class="content">
-		
+	<div class="content w_c-content">
+		<div class="profile content-box">
+			<div class="pic"><img src="img/thisPicIsFreaky.jpg"></div>
+			<div class="labels">
+				<h2>User Name</h2>
+				<h4>Subtitle</h4>
+			</div>
+			<div class="edit-labels">
+				<a class="button-primary" href="javascript:void(0)">Edit</a>
+				<a class="button-primary" href="javascript:void(0)">Share</a>
+			</div>
+		</div>
+		<div class="menu content-box">
+			<div>
+				<a class="button-primary" href="javascript:void(0)" id="btn-collection">Collection</a>
+				<a class="button-primary" href="javascript:void(0)" id="btn-wishlist">Wishlist</a>
+			</div>
+			<div>
+				<p>Search | Genre | Alphabetical | Purchase Date | Archive</p>
+			</div>
+		</div>
+		<div class="content-box" id="content-collection">
+			<h2>Collection</h2>
+			<h4 class="archive-seperator">Archive</h4>
+		</div>
+		<div class="content-box" id="content-wishlist">
+			<h2>Wishlist</h2>
+			<h4 class="archive-seperator">Archive</h4>
+		</div>
 	</div>
 
 	<footer>
-		
+		<div class="ftr_content">
+			<div class="ftr_logo">
+				[LOGO]
+			</div>
+			<ul>
+				<li>terms of use</li>
+				<li>privacy</li>
+				<li>copyright policy</li>
+				<li>help</li>
+				<li>language: English</li>
+			</ul>
+		</div>
 	</footer>
+	<script src="js/w_c_tabs.js"></script>
 </body>
 
 </html>
