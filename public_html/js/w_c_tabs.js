@@ -1,4 +1,4 @@
-console.log("Running...");
+console.log("tabs: Running...");
 
 var oncollection = true;
 
@@ -10,6 +10,7 @@ var wishlist = document.getElementById("content-wishlist");
 
 //////////// Hide Content
 wishlist.classList.add("hide-tab");
+btncollection.classList.add("checked-tab");
 
 //////////// Attach Listeners
 btncollection.addEventListener("click", tabtocollection);
@@ -24,6 +25,8 @@ function tabtocollection(){
         collection.classList.remove("hide-tab");
         wishlist.classList.add("hide-tab");
         oncollection = true;
+        btncollection.classList.add("checked-tab");
+        btnwishlist.classList.remove("checked-tab");
     }
 }
 
@@ -32,5 +35,7 @@ function tabtowishlist(){
         collection.classList.add("hide-tab");
         wishlist.classList.remove("hide-tab");
         oncollection = false;
+        btncollection.classList.remove("checked-tab");
+        btnwishlist.classList.add("checked-tab");
     }
 }
