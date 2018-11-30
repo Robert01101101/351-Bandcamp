@@ -451,7 +451,7 @@ header .hdr_btn:hover {
 	grid-template-areas: 
 		"mainfeed releasefeed";
 	grid-auto-rows: auto;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 2fr 1fr;
 }
 
 /* ######################################## FOOTER ##################################### */
@@ -574,14 +574,57 @@ footer ul li {
 	display: none;
 }
 
+.main-feed .hidden-details {
+	display: none;
+}
+
+.feed-grid .album-extras {
+	display: none;
+}
+
+.hidden-tags {
+	display: none;
+}
+.hidden-tags > p {
+	margin-bottom: 0;
+}
+
+/* ---- Album Extras & Details ----*/
+.main-feed .hidden-details h2, 
+.main-feed .hidden-details h4 {
+	margin: 0;
+}
+
+.main-feed .hidden-details .track-title {
+	margin: .5rem 0;
+}
+
 @media (min-width: 62.5em){
 	/* Content width breakpoint: go from (100%-1rem) to (65%) */
 	/* Main Feed Album Art changes: */
 	.main-feed .album-art{
-		width: 50%;
+		width: 100%;
 	}
 	.main-feed .album-art .button-container {
 		display: none;
+	}
+	.feed-grid {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 50% 48%;
+		grid-column-gap: 2%;
+	}
+	.feed-grid .album-art {
+		grid-area: auto;
+	}
+	.feed-grid .album-extras {
+		display: block
+	}
+	.main-feed .hidden-details {
+		display: block;
+	}
+	.hidden-tags {
+		display: block;
 	}
 	.main-feed .album-art .track-title {
 		width: 80%;
@@ -608,13 +651,6 @@ footer ul li {
 		display: block;
 		margin-top: .5rem;
 	}
-	/*
-	.feed-grid {
-		display: grid;
-		width: 100%;
-		grid-template-columns: 1fr 1fr;
-	}*/
-
 
 	/* JS Classes */
 	.js-playing .overlay-content {
@@ -659,6 +695,13 @@ footer ul li {
 .release-feed .album-art {
 	cursor: default;
 }
+.release-feed .release-grid {
+	display: grid;
+	grid-template-columns: 55% 40%;
+	grid-column-gap: 5%;
+	height: fit-content;
+	min-height: 8rem;
+}
 
 /* ----- METADATA -----*/
 .release-feed-title, .release-feed-artist,
@@ -669,12 +712,34 @@ footer ul li {
 	text-decoration: none;
 }
 .release-feed-title > h5 {
-	margin-top: .25rem;
 	font-weight: bold;
 }
 .release-feed-title:hover, .release-feed-artist:hover {
 	text-decoration: underline;
 	text-decoration-color: #505958;
+}
+.release-feed .metadata {
+	position: relative;
+}
+.release-feed .new-favorite {
+	width: 2rem;
+	filter:brightness(0);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}
+.release-feed .new-shop {
+	width: 2rem;
+	position: absolute;
+	bottom: 0;
+}
+.release-feed .new-favorite:hover {
+	filter:brightness(.5);
+	cursor: pointer;
+}
+.release-feed .new-shop:hover {
+	filter:invert(.5);
+	cursor: pointer;
 }
 
 /* ---- Album Overlays ----*/
@@ -702,24 +767,6 @@ footer ul li {
 .release-feed .album-music-controls img:nth-of-type(2) {
 	width: 20%;
 }
-
-@media (min-width: 47em){
-	/* switch from 3-1 ratio to 2-1 for main grid */
-	.feed-content {
-		grid-template-columns: 2fr 1fr;
-	}
-	/* Switch grid system from 2x2 to 1x4  for release grid*/
-	.release-feed > .grid-container {
-		display: grid;
-	  	grid-template-columns: 1fr 1fr;
-	  	grid-template-rows: 1fr 1fr;
-	  	grid-column-gap: .8rem;
-	  	grid-row-gap: .8rem;
-	  	width: 100%;
-	  	height: fit-content;
-	}
-}
-
 
 /* ################ Sources Used #################
 - Learning CSS Grids: https://www.w3schools.com/css/css_grid.asp

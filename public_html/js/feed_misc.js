@@ -16,12 +16,16 @@ var fav = document.getElementsByClassName("favorite");
 var play = document.getElementsByClassName("play-arrow");
 var bought = document.getElementsByClassName("download");
 var feedtile = document.getElementsByClassName("feed-tile");
+var newfav = document.getElementsByClassName("new-favorite");
+var newbought = document.getElementsByClassName("new-shop");
 
 //////////// Slice Items into Arrays
 fav = Array.prototype.slice.call(fav);
 play = Array.prototype.slice.call(play);
 bought = Array.prototype.slice.call(bought);
 feedtile = Array.prototype.slice.call(feedtile);
+newfav = Array.prototype.slice.call(newfav);
+newbought = Array.prototype.slice.call(newbought);
 
 //////////// Create Boolean Arrays
 var filled = [];
@@ -36,12 +40,22 @@ var yougotit = [];
 bought.forEach( function(element){
     yougotit.push(false);
 });
+var newyougotit = [];
+newbought.forEach( function(element){
+    newyougotit.push(false);
+});
+var newfilled = [];
+newfav.forEach( function(element){
+    newfilled.push(false);
+});
 
 //////////// Debug: Print lengths
 console.log("fav.length=" + fav.length);console.log("filled.length=" + filled.length);console.log("-----");
 console.log("play.length=" + play.length);console.log("feedtile.length" + feedtile.length);
 console.log("itsplayingalright.length=" + itsplayingalright.length);console.log("-----");
-console.log("bought.length=" + bought.length);console.log("yougotit.length=" + yougotit.length);
+console.log("bought.length=" + bought.length);console.log("yougotit.length=" + yougotit.length);console.log("-----");
+console.log("newbought.length=" + newbought.length);console.log("newyougotit.length=" + newyougotit.length);console.log("-----");
+console.log("newfav.length=" + newfav.length);console.log("newfilled.length=" + newfilled.length);
 
 //////////// Attach Listeners
 //Event Listeners with Parameters: https://www.w3schools.com/jsref/met_document_addeventlistener.asp
@@ -58,6 +72,16 @@ play.forEach( function(element){
 bought.forEach( function(element){
     element.addEventListener("click", function() {
         changebuy(element);
+    });  
+});
+newfav.forEach( function(element){
+    element.addEventListener("click", function() {
+        changenewfav(element);
+    });   
+});
+newbought.forEach( function(element){
+    element.addEventListener("click", function() {
+        changenewbuy(element);
     });  
 });
 
@@ -122,4 +146,27 @@ function changebuy(theObject){
         yougotit[idxb] = true;
     }
     console.log("changebuy: index=" + idx + "   |   yougotit=" + yougotit[idx]);
+}
+
+
+function changenewfav(theObject){
+    var idx = newfav.indexOf(theObject)
+    if(!newfilled[idx]){
+        newfav[idx].src = "img/favorite-fill.png";
+        newfilled[idx] = true;
+    }else{
+        newfav[idx].src = "img/favorite-border.png";
+        newfilled[idx] = false;
+    }
+    console.log("changefav: index=" + idx + "   |   filled=" + newfilled[idx]);
+}
+
+
+function changenewbuy(theObject){
+    var idx = newbought.indexOf(theObject)
+    if(!newyougotit[idx]){
+        newbought[idx].src = "img/shop.svg";
+        newyougotit[idx] = true;
+    }
+    console.log("changebuy: index=" + idx + "   |   yougotit=" + newyougotit[idx]);
 }
