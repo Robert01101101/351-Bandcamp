@@ -338,7 +338,6 @@ header .hdr_btn:hover {
 	margin-left:1rem;
 	margin-top:1rem;
 	margin-bottom:0;
-	font-size: 1.5rem;
 }
 
 .overlay-content h4{
@@ -583,6 +582,19 @@ footer ul li {
 	display: none;
 }
 
+.main-feed .overlay-content h2,
+.main-feed .overlay-content > a{
+	color: white;
+	text-decoration: none;
+}
+.main-feed .overlay-content h4{
+	color: white;
+	text-decoration: none;
+}
+.main-feed .overlay-content > a:hover{
+	text-decoration: underline;
+}
+
 /* ---- Album Extras & Details ----*/
 .main-feed .hidden-details h2, 
 .main-feed .hidden-details h4,
@@ -675,6 +687,9 @@ footer ul li {
 	.hidden-button-container {
 		display: block;
 		margin-top: .5rem;
+	}
+	.main-feed .overlay-content h2{
+		font-size: 1.5rem;
 	}
 
 	/* JS Classes */
