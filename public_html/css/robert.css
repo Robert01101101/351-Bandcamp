@@ -554,14 +554,58 @@ footer ul li {
 	border-bottom: 1px solid #D5DADB;
 	margin-block-end: 1em;
 }
+.feed-content > .content-box > h4.feed-title {
+	margin-block-end: 0;
+}
 
+.feed-tabs {
+    margin-block-end: 1em;
+}
+.button-tab {
+	display: inline-block;
+    padding: 0.5rem 1rem;
+    padding-bottom: calc(0.5rem - 2px);
+    border-bottom: solid #D5DADB 3px;
+	margin: 0rem;
+	margin-top:.5rem;
+	margin-left: -4px;
+	transition:color 0.3s;
+	transition:background-color 0.3s;
+	color:#1DA0C3;
+	text-decoration:none;
+	font-weight: bold;
+}
+.button-tab:first-of-type {
+	margin-left: 0;
+}
+.button-tab:not(.tab-selected):hover{
+	padding-bottom: calc(0.5rem - 2px);
+	border-bottom: solid #1DA0C3 3px;
+}
+.tab-selected {
+	color: black;
+	padding-bottom: calc(0.5rem - 2px);
+	border-bottom: solid black 3px;
+}
 
 /* ######################### Feed: Main ######################*/
 /* ------ TILES ------*/
-.main-feed > .content-box {
+.main-feed > #content-creators > .content-box,
+.main-feed > #content-suggestions > .content-box,
+.main-feed > #content-fan > .content-box,
+.main-feed > #content-collection > .w_c-grid > .content-box,
+.main-feed > #content-wishlist > .w_c-grid > .content-box {
 	margin: 0;
 	background-color: white;
 	margin-bottom: 1rem;
+}
+
+.main-feed > #content-creators > .content-box:last-of-type,
+.main-feed > #content-suggestions > .content-box:last-of-type,
+.main-feed > #content-fan > .content-box:last-of-type,
+.main-feed > #content-collection > .w_c-grid > .content-box:last-of-type,
+.main-feed > #content-wishlist > .w_c-grid > .content-box:last-of-type {
+	margin-bottom: 0;
 }
 
 /* ---- Album Art ----*/
@@ -636,6 +680,43 @@ footer ul li {
 .feed-supporters-grid > img{
 	width:100%;
 }
+/* Action Type */
+.main-feed .hidden-action-type {
+	display: none;
+}
+.main-feed .action-type img,
+.main-feed .hidden-action-type img
+ {
+	width: 2rem;
+	display: inline-block;
+}
+.main-feed .action-type h4,
+.main-feed .hidden-action-type h4
+ {
+	font-weight: normal;
+	display: inline-block;
+	transform: translate(0,-.7rem);
+	margin-bottom: .5rem;
+}
+.main-feed .hidden-action-type a,
+.main-feed .action-type a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+.main-feed .hidden-action-type a:hover,
+.main-feed .action-type a:hover {
+	text-decoration: underline;
+}
+.showmorebtn {
+	cursor: pointer;
+	width: 100%;
+	text-align: center;
+}
+.showmorebtn:hover {
+	text-decoration: underline;
+}
+
 
 @media (min-width: 62.5em){
 	/* Content width breakpoint: go from (100%-1rem) to (65%) */
@@ -691,6 +772,12 @@ footer ul li {
 	}
 	.main-feed .overlay-content h2{
 		font-size: 1.5rem;
+	}
+	.main-feed .action-type {
+		display: none;
+	}
+	.main-feed .hidden-action-type {
+		display: block;
 	}
 
 	/* JS Classes */
@@ -844,6 +931,15 @@ footer ul li {
 .archive-seperator {
 	width: 100%;
 	border-bottom: 1px solid #D5DADB;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+	text-align: center;
+}
+.w_c-content .content-title {
+	margin-top: 1rem;
+	width: 100%;
+	border-bottom: 1px solid #D5DADB;
+	text-align: center;
 }
 .hide-tab {
 	display: none;
@@ -859,20 +955,17 @@ footer ul li {
 	clear: both;
 	display: table;
 }
-.manibulate-btn, .archive-btn {
+.manibulate-btn, .archive-btn > a {
 	font-weight: bold;
 	cursor: pointer;
 	color: #505958;
+	text-decoration: none;
 }
-.manibulate-btn:hover, .archive-btn:hover {
+.manibulate-btn:hover, .archive-btn > a:hover {
 	text-decoration: underline;
 }
 .manipulate-list p {
 	margin-left: .5rem;
-}
-.checked-tab {
-	color: white;
-	background-color: black;
 }
 span.date {
 	text-decoration: underline;
@@ -896,8 +989,47 @@ span.date {
 	max-width: 20rem;
 	padding: 0;
 }
-.w_c-content .hidden {
+.hidden {
 	display: none;
+}
+.w_c-content .button-tab {
+	margin-top: 0;
+	font-size: 1.5rem;
+}
+.w_c-content .hidden-button-container .button-primary {
+	width: calc(100% - 2rem - 4px);
+	text-align: center;
+}
+.w_c-content .hidden-button-container .favorite {
+	width: 2.8rem;
+	transform: translate(0);
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#archive {
+	margin-top: -4rem;
+	margin-bottom: 6rem;
+}
+@media (min-width: 62.5em){
+	/* Content width breakpoint: go from (100%-1rem) to (65%) */
+	.w_c-grid {
+		display: grid;
+		grid-template-columns: 32% 32% 32%;
+		grid-column-gap: 2%;
+		height: fit-content;
+	}
+
+	/* HARDCODED FIXES */
+	.main-feed .overlay-content h2.makeMeSmall {
+		font-size: 1.4rem;
+	}
+}
+
+/* HARDCODED FIXES */
+.pushMeDown {
+	margin-top: 4rem;
 }
 
 

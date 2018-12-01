@@ -45,477 +45,1364 @@
 		<div class="content feed-content">
 			<!-------------------------------------- Main Feed -------------------------------------->
 			<div class="main-feed content-box">
-				<h4>Feed</h4>
-				<div class="content-box"> <!-- Feed Tile 1 -->
-					<div class="feed-grid">
-						<div class="content-box album-art">
-							<div class="overlay-container feed-tile">
-								<img class="image-fit album" src="img/albumart1.jpg">
-								<div class="overlay-background"></div>
-								<div class="overlay-content">
-									<a href="product_page.html"><h2>Into the Light</h2></a>
-									<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
-									<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
-									<div class="album-music-controls">
-										<img class="skip-prev" src="img/skip-prev.png">
-										<img class="play-arrow" src="img/play-arrow.png">
-										<img class="skip-next" src="img/skip-next.png">
-									</div>
-									<p class="track-title">3. Waltz of Shadows 3:12</p>
-									<div class="button-container">
-										<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
-										<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 12$</a>
-										<img class="favorite" src="img/favorite-border.png">
+				<h4 class="feed-title">Feed</h4>
+				<div class="feed-tabs">
+					<a class="button-tab tab-selected" href="javascript:void(0)" id="btn-creators">Creator Activity</a>
+					<a class="button-tab" href="javascript:void(0)" id="btn-suggestions">Suggestions</a>
+					<a class="button-tab" href="javascript:void(0)" id="btn-fan">Fan Activity</a>
+				</div>
+
+				<!--############################################################################################-->
+				<!---------------------------------- Main Feed Content: CREATORS ------------------------------>
+				<!--############################################################################################-->
+				<div id="content-creators">
+					<div class="content-box"> <!-- Feed Tile 1 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="img/user1.jpg"></a>
+							<h4><a href="javascript:void(0)">Marisa Anderson</a> published:</h4>
+						</div>
+						<div class="feed-grid">
+
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+									<img class="image-fit album" src="img/albumart1.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Into the Light</h2></a>
+										<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">3. Waltz of Shadows 3:12</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 12$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
 									</div>
 								</div>
 							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0011323037_10.jpg -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="img/user1.jpg"></a>
+									<h4><a href="javascript:void(0)">Marisa Anderson</a> published</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
 						</div>
-						<div class="album-extras">
-							<h4>Supported By:</h4>
-							<div class="feed-supporters-grid">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				            </div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Into the Light</h2></a>
+							<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+							<p class="track-title">3. Waltz of Shadows 3:12</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 12$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> cinematic &nbsp;|&nbsp; experimental&nbsp;|&nbsp; guitar</p>
 						</div>
 					</div>
-					<div class="hidden-details">
-						<a href="product_page.html"><h2>Into the Light</h2></a>
-						<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
-						<p class="track-title">3. Waltz of Shadows 3:12</p>
+
+					<div class="content-box"> <!-- Feed Tile 2 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="img/user2.jpg"></a>
+							<h4><a href="javascript:void(0)">Chuck Johnson</a> published:</h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a3659944552_16.jpg -->
+									<img class="image-fit album" src="img/albumart2.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
+										<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0011438583_10.jpg -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="img/user2.jpg"></a>
+									<h4><a href="javascript:void(0)">Chuck Johnson</a> published</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
+							<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+							<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> experimental &nbsp;|&nbsp; american primitive &nbsp;|&nbsp; drone &nbsp;|&nbsp; electronic &nbsp;|&nbsp; folk &nbsp;|&nbsp; Tulsa</p>
+						</div>
 					</div>
-					<div class="hidden-button-container">
-						<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
-						<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 12$</a>
-						<img class="favorite" src="img/favorite-border.png">
+
+					<div class="content-box"> <!-- Feed Tile 3 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="img/user3.png"></a>
+							<h4><a href="javascript:void(0)">Daniel Bachman</a> published:</h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a4119895710_16.jpg -->
+									<img class="image-fit album" src="img/albumart3.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>The Morning Star</h2></a>
+										<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">7. New Moon 13:38</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 10$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0000297661_100.png -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="img/user3.png"></a>
+									<h4><a href="javascript:void(0)">Daniel Bachman</a> published</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>The Morning Star</h2></a>
+							<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+							<p class="track-title">7. New Moon 13:38</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 10$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> experimental &nbsp;|&nbsp; john fahey &nbsp;|&nbsp; three loved recordings &nbsp;|&nbsp; acoustic guitar &nbsp;|&nbsp; american primitive
+							 &nbsp;|&nbsp; guitar &nbsp;|&nbsp; psychedelic</p>
+						</div>
 					</div>
-					<div class="hidden-tags">
-						<p><strong>tags:</strong> cinematic &nbsp;|&nbsp; experimental&nbsp;|&nbsp; guitar</p>
+
+					<div class="content-box"> <!-- Feed Tile 4 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="img/user4.jpg"></a>
+							<h4><a href="javascript:void(0)">WET TUNA</a> published:</h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a1252748894_10.jpg -->
+									<img class="image-fit album" src="img/albumart4.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+										<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">1. NEW YORK STREET 20:11</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0009806372_21.jpg -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="img/user4.jpg"></a>
+									<h4><a href="javascript:void(0)">WET TUNA</a> published</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+							<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+							<p class="track-title">1. NEW YORK STREET 20:11</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> bootleg &nbsp;|&nbsp; freefolk &nbsp;|&nbsp; jam</p>
+						</div>
+					</div>
+
+					<div class="content-box"> <!-- Feed Tile 5 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="img/user1.jpg"></a>
+							<h4><a href="javascript:void(0)">Marisa Anderson</a> published:</h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a1807425984_16.jpg-->
+									<img class="image-fit album" src="img/albumart5.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Mercury</h2></a>
+										<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">1. The New Country 1:46</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 8$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0011323037_10.jpg -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="img/user1.jpg"></a>
+									<h4><a href="javascript:void(0)">Marisa Anderson</a> published</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Mercury</h2></a>
+							<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+							<p class="track-title">1. The New Country 1:46</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 8$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> americana &nbsp;|&nbsp; experimental &nbsp;|&nbsp; instrumental &nbsp;|&nbsp; takoma &nbsp;|&nbsp; americana lofi &nbsp;|&nbsp; folk
+							 &nbsp;|&nbsp; roots &nbsp;|&nbsp; Portland</p>
+						</div>
 					</div>
 				</div>
 
-				<div class="content-box"> <!-- Feed Tile 2 -->
-					<div class="feed-grid">
-						<div class="content-box album-art">
-							<div class="overlay-container feed-tile">
-							<!-- Album Art from: https://f4.bcbits.com/img/a3659944552_16.jpg -->
-								<img class="image-fit album" src="img/albumart2.jpg">
-								<div class="overlay-background"></div>
-								<div class="overlay-content">
-									<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
-									<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
-									<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
-									<div class="album-music-controls">
-										<img class="skip-prev" src="img/skip-prev.png">
-										<img class="play-arrow" src="img/play-arrow.png">
-										<img class="skip-next" src="img/skip-next.png">
-									</div>
-									<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
-									<div class="button-container">
-										<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
-										<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
-										<img class="favorite" src="img/favorite-border.png">
+				<!--############################################################################################-->
+				<!---------------------------------- Main Feed Content: SUGGESTIONS ------------------------------>
+				<!--############################################################################################-->
+				<div id="content-suggestions" class="hidden">
+					<div class="content-box"> <!-- Feed Tile 3 -->
+						<div class="action-type">
+							<h4>suggested: </h4>
+							<a href="javascript:void(0)"><img src="img/user3.png"></a>
+							<h4><a href="javascript:void(0)">Daniel Bachman</a></h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a4119895710_16.jpg -->
+									<img class="image-fit album" src="img/albumart3.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>The Morning Star</h2></a>
+										<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">7. New Moon 13:38</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 10$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
 									</div>
 								</div>
 							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0000297661_100.png -->
+								<div class="hidden-action-type">
+									<h4>suggested: </h4>
+									<a href="javascript:void(0)"><img src="img/user3.png"></a>
+									<h4><a href="javascript:void(0)">Daniel Bachman</a></h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
 						</div>
-						<div class="album-extras">
-							<h4>Supported By:</h4>
-							<div class="feed-supporters-grid">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				            </div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>The Morning Star</h2></a>
+							<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+							<p class="track-title">7. New Moon 13:38</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 10$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> experimental &nbsp;|&nbsp; john fahey &nbsp;|&nbsp; three loved recordings &nbsp;|&nbsp; acoustic guitar &nbsp;|&nbsp; american primitive
+							 &nbsp;|&nbsp; guitar &nbsp;|&nbsp; psychedelic</p>
 						</div>
 					</div>
-					<div class="hidden-details">
-						<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
-						<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
-						<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+
+					<div class="content-box"> <!-- Feed Tile 4 -->
+						<div class="action-type">
+							<h4>suggested: </h4>
+							<a href="javascript:void(0)"><img src="img/user4.jpg"></a>
+							<h4><a href="javascript:void(0)">WET TUNA</a></h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a1252748894_10.jpg -->
+									<img class="image-fit album" src="img/albumart4.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+										<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">1. NEW YORK STREET 20:11</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0009806372_21.jpg -->
+								<div class="hidden-action-type">
+									<h4>suggested: </h4>
+									<a href="javascript:void(0)"><img src="img/user4.jpg"></a>
+									<h4><a href="javascript:void(0)">WET TUNA</a></h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+							<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+							<p class="track-title">1. NEW YORK STREET 20:11</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> bootleg &nbsp;|&nbsp; freefolk &nbsp;|&nbsp; jam</p>
+						</div>
 					</div>
-					<div class="hidden-button-container">
-						<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
-						<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
-						<img class="favorite" src="img/favorite-border.png">
+
+					<div class="content-box"> <!-- Feed Tile 5 -->
+						<div class="action-type">
+							<h4>suggested: </h4>
+							<a href="javascript:void(0)"><img src="img/user1.jpg"></a>
+							<h4><a href="javascript:void(0)">Marisa Anderson</a></h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a1807425984_16.jpg-->
+									<img class="image-fit album" src="img/albumart5.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Mercury</h2></a>
+										<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">1. The New Country 1:46</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 8$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0011323037_10.jpg -->
+								<div class="hidden-action-type">
+									<h4>suggested: </h4>
+									<a href="javascript:void(0)"><img src="img/user1.jpg"></a>
+									<h4><a href="javascript:void(0)">Marisa Anderson</a></h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Mercury</h2></a>
+							<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+							<p class="track-title">1. The New Country 1:46</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 8$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> americana &nbsp;|&nbsp; experimental &nbsp;|&nbsp; instrumental &nbsp;|&nbsp; takoma &nbsp;|&nbsp; americana lofi &nbsp;|&nbsp; folk
+							 &nbsp;|&nbsp; roots &nbsp;|&nbsp; Portland</p>
+						</div>
 					</div>
-					<div class="hidden-tags">
-						<p><strong>tags:</strong> experimental &nbsp;|&nbsp; american primitive &nbsp;|&nbsp; drone &nbsp;|&nbsp; electronic &nbsp;|&nbsp; folk &nbsp;|&nbsp; Tulsa</p>
+
+					<div class="content-box"> <!-- Feed Tile 1 -->
+						<div class="action-type">
+							<h4>suggested: </h4>
+							<a href="javascript:void(0)"><img src="img/user1.jpg"></a>
+							<h4><a href="javascript:void(0)">Marisa Anderson</a></h4>
+						</div>
+						<div class="feed-grid">
+
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+									<img class="image-fit album" src="img/albumart1.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Into the Light</h2></a>
+										<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">3. Waltz of Shadows 3:12</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 12$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0011323037_10.jpg -->
+								<div class="hidden-action-type">
+									<h4>suggested: </h4>
+									<a href="javascript:void(0)"><img src="img/user1.jpg"></a>
+									<h4><a href="javascript:void(0)">Marisa Anderson</a></h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Into the Light</h2></a>
+							<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+							<p class="track-title">3. Waltz of Shadows 3:12</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 12$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> cinematic &nbsp;|&nbsp; experimental&nbsp;|&nbsp; guitar</p>
+						</div>
+					</div>
+
+					<div class="content-box"> <!-- Feed Tile 2 -->
+						<div class="action-type">
+							<h4>suggested: </h4>
+							<a href="javascript:void(0)"><img src="img/user2.jpg"></a>
+							<h4><a href="javascript:void(0)">Chuck Johnson</a></h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a3659944552_16.jpg -->
+									<img class="image-fit album" src="img/albumart2.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
+										<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0011438583_10.jpg -->
+								<div class="hidden-action-type">
+									<h4>suggested: </h4>
+									<a href="javascript:void(0)"><img src="img/user2.jpg"></a>
+									<h4><a href="javascript:void(0)">Chuck Johnson</a></h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
+							<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+							<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> experimental &nbsp;|&nbsp; american primitive &nbsp;|&nbsp; drone &nbsp;|&nbsp; electronic &nbsp;|&nbsp; folk &nbsp;|&nbsp; Tulsa</p>
+						</div>
 					</div>
 				</div>
 
-				<div class="content-box"> <!-- Feed Tile 3 -->
-					<div class="feed-grid">
-						<div class="content-box album-art">
-							<div class="overlay-container feed-tile">
-							<!-- Album Art from: https://f4.bcbits.com/img/a4119895710_16.jpg -->
-								<img class="image-fit album" src="img/albumart3.jpg">
-								<div class="overlay-background"></div>
-								<div class="overlay-content">
-									<a href="product_page.html"><h2>The Morning Star</h2></a>
-									<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
-									<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
-									<div class="album-music-controls">
-										<img class="skip-prev" src="img/skip-prev.png">
-										<img class="play-arrow" src="img/play-arrow.png">
-										<img class="skip-next" src="img/skip-next.png">
-									</div>
-									<p class="track-title">7. New Moon 13:38</p>
-									<div class="button-container">
-										<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
-										<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 10$</a>
-										<img class="favorite" src="img/favorite-border.png">
+				<!--############################################################################################-->
+				<!---------------------------------- Main Feed Content: FAN ------------------------------>
+				<!--############################################################################################-->
+				<div id="content-fan" class="hidden">
+					<div class="content-box"> <!-- Feed Tile 5 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="https://picsum.photos/204?random"></a>
+							<h4><a href="javascript:void(0)">randomUser</a> purchased:</h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a1807425984_16.jpg-->
+									<img class="image-fit album" src="img/albumart5.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Mercury</h2></a>
+										<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">1. The New Country 1:46</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 8$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
 									</div>
 								</div>
 							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0011323037_10.jpg -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="https://picsum.photos/204?random"></a>
+									<h4><a href="javascript:void(0)">randomUser</a> purchased</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
 						</div>
-						<div class="album-extras">
-							<h4>Supported By:</h4>
-							<div class="feed-supporters-grid">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				            </div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Mercury</h2></a>
+							<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+							<p class="track-title">1. The New Country 1:46</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 8$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> americana &nbsp;|&nbsp; experimental &nbsp;|&nbsp; instrumental &nbsp;|&nbsp; takoma &nbsp;|&nbsp; americana lofi &nbsp;|&nbsp; folk
+							 &nbsp;|&nbsp; roots &nbsp;|&nbsp; Portland</p>
 						</div>
 					</div>
-					<div class="hidden-details">
-						<a href="product_page.html"><h2>The Morning Star</h2></a>
-						<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
-						<p class="track-title">7. New Moon 13:38</p>
-					</div>
-					<div class="hidden-button-container">
-						<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
-						<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 10$</a>
-						<img class="favorite" src="img/favorite-border.png">
-					</div>
-					<div class="hidden-tags">
-						<p><strong>tags:</strong> experimental &nbsp;|&nbsp; john fahey &nbsp;|&nbsp; three loved recordings &nbsp;|&nbsp; acoustic guitar &nbsp;|&nbsp; american primitive
-						 &nbsp;|&nbsp; guitar &nbsp;|&nbsp; psychedelic</p>
-					</div>
-				</div>
 
-				<div class="content-box"> <!-- Feed Tile 4 -->
-					<div class="feed-grid">
-						<div class="content-box album-art">
-							<div class="overlay-container feed-tile">
-							<!-- Album Art from: https://f4.bcbits.com/img/a1252748894_10.jpg -->
-								<img class="image-fit album" src="img/albumart4.jpg">
-								<div class="overlay-background"></div>
-								<div class="overlay-content">
-									<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
-									<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
-									<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
-									<div class="album-music-controls">
-										<img class="skip-prev" src="img/skip-prev.png">
-										<img class="play-arrow" src="img/play-arrow.png">
-										<img class="skip-next" src="img/skip-next.png">
-									</div>
-									<p class="track-title">1. NEW YORK STREET 20:11</p>
-									<div class="button-container">
-										<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
-										<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
-										<img class="favorite" src="img/favorite-border.png">
+					<div class="content-box"> <!-- Feed Tile 2 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="https://picsum.photos/205?random"></a>
+							<h4><a href="javascript:void(0)">whyyy</a> listened to:</h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a3659944552_16.jpg -->
+									<img class="image-fit album" src="img/albumart2.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
+										<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
 									</div>
 								</div>
 							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0011438583_10.jpg -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="https://picsum.photos/205?random"></a>
+									<h4><a href="javascript:void(0)">whyyy</a> listened to</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
 						</div>
-						<div class="album-extras">
-							<h4>Supported By:</h4>
-							<div class="feed-supporters-grid">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				            </div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
+							<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+							<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> experimental &nbsp;|&nbsp; american primitive &nbsp;|&nbsp; drone &nbsp;|&nbsp; electronic &nbsp;|&nbsp; folk &nbsp;|&nbsp; Tulsa</p>
 						</div>
 					</div>
-					<div class="hidden-details">
-						<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
-						<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
-						<p class="track-title">1. NEW YORK STREET 20:11</p>
-					</div>
-					<div class="hidden-button-container">
-						<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
-						<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
-						<img class="favorite" src="img/favorite-border.png">
-					</div>
-					<div class="hidden-tags">
-						<p><strong>tags:</strong> bootleg &nbsp;|&nbsp; freefolk &nbsp;|&nbsp; jam</p>
-					</div>
-				</div>
 
-				<div class="content-box"> <!-- Feed Tile 5 -->
-					<div class="feed-grid">
-						<div class="content-box album-art">
-							<div class="overlay-container feed-tile">
-							<!-- Album Art from: https://f4.bcbits.com/img/a1807425984_16.jpg-->
-								<img class="image-fit album" src="img/albumart5.jpg">
-								<div class="overlay-background"></div>
-								<div class="overlay-content">
-									<a href="product_page.html"><h2>Mercury</h2></a>
-									<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
-									<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
-									<div class="album-music-controls">
-										<img class="skip-prev" src="img/skip-prev.png">
-										<img class="play-arrow" src="img/play-arrow.png">
-										<img class="skip-next" src="img/skip-next.png">
-									</div>
-									<p class="track-title">1. The New Country 1:46</p>
-									<div class="button-container">
-										<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
-										<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 8$</a>
-										<img class="favorite" src="img/favorite-border.png">
+					<div class="content-box"> <!-- Feed Tile 1 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="https://picsum.photos/205?random"></a>
+							<h4><a href="javascript:void(0)">whyyy</a> purchased:</h4>
+						</div>
+						<div class="feed-grid">
+
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+									<img class="image-fit album" src="img/albumart1.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Into the Light</h2></a>
+										<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">3. Waltz of Shadows 3:12</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 12$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
 									</div>
 								</div>
 							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0011323037_10.jpg -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="https://picsum.photos/205?random"></a>
+									<h4><a href="javascript:void(0)">whyyy</a> purchased</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
 						</div>
-						<div class="album-extras">
-							<h4>Supported By:</h4>
-							<div class="feed-supporters-grid">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				              <img src="https://picsum.photos/204?random">
-				              <img src="https://picsum.photos/205?random">
-				              <img src="https://picsum.photos/206?random">
-				              <img src="https://picsum.photos/207?random">
-				              <img src="https://picsum.photos/208?random">
-				              <img src="https://picsum.photos/209?random">
-				              <img src="https://picsum.photos/210?random">
-				              <img src="https://picsum.photos/211?random">
-				              <img src="https://picsum.photos/200?random">
-				              <img src="https://picsum.photos/201?random">
-				              <img src="https://picsum.photos/202?random">
-				              <img src="https://picsum.photos/203?random">
-				            </div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Into the Light</h2></a>
+							<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+							<p class="track-title">3. Waltz of Shadows 3:12</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 12$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> cinematic &nbsp;|&nbsp; experimental&nbsp;|&nbsp; guitar</p>
 						</div>
 					</div>
-					<div class="hidden-details">
-						<a href="product_page.html"><h2>Mercury</h2></a>
-						<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
-						<p class="track-title">1. The New Country 1:46</p>
+
+					<div class="content-box"> <!-- Feed Tile 3 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="https://picsum.photos/200?random"></a>
+							<h4><a href="javascript:void(0)">guitarHero</a> purchased:</h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a4119895710_16.jpg -->
+									<img class="image-fit album" src="img/albumart3.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>The Morning Star</h2></a>
+										<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">7. New Moon 13:38</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 10$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0000297661_100.png -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="https://picsum.photos/200?random"></a>
+									<h4><a href="javascript:void(0)">guitarHero</a> purchased</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>The Morning Star</h2></a>
+							<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+							<p class="track-title">7. New Moon 13:38</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 10$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> experimental &nbsp;|&nbsp; john fahey &nbsp;|&nbsp; three loved recordings &nbsp;|&nbsp; acoustic guitar &nbsp;|&nbsp; american primitive
+							 &nbsp;|&nbsp; guitar &nbsp;|&nbsp; psychedelic</p>
+						</div>
 					</div>
-					<div class="hidden-button-container">
-						<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
-						<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 8$</a>
-						<img class="favorite" src="img/favorite-border.png">
-					</div>
-					<div class="hidden-tags">
-						<p><strong>tags:</strong> americana &nbsp;|&nbsp; experimental &nbsp;|&nbsp; instrumental &nbsp;|&nbsp; takoma &nbsp;|&nbsp; americana lofi &nbsp;|&nbsp; folk
-						 &nbsp;|&nbsp; roots &nbsp;|&nbsp; Portland</p>
+
+					<div class="content-box"> <!-- Feed Tile 4 -->
+						<div class="action-type">
+							<a href="javascript:void(0)"><img src="https://picsum.photos/211?random"></a>
+							<h4><a href="javascript:void(0)">stringsNhorns</a> listened to:</h4>
+						</div>
+						<div class="feed-grid">
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a1252748894_10.jpg -->
+									<img class="image-fit album" src="img/albumart4.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+										<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">1. NEW YORK STREET 20:11</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
+											<img class="favorite" src="img/favorite-border.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="album-extras">
+								<!-- user image source: https://f4.bcbits.com/img/0009806372_21.jpg -->
+								<div class="hidden-action-type">
+									<a href="javascript:void(0)"><img src="https://picsum.photos/211?random"></a>
+									<h4><a href="javascript:void(0)">stringsNhorns</a> listened to</h4>
+								</div>
+								<h4>Supported By:</h4>
+								<div class="feed-supporters-grid">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					              <img src="https://picsum.photos/211?random">
+					              <img src="https://picsum.photos/200?random">
+					              <img src="https://picsum.photos/201?random">
+					              <img src="https://picsum.photos/202?random">
+					              <img src="https://picsum.photos/203?random">
+					              <img src="https://picsum.photos/204?random">
+					              <img src="https://picsum.photos/205?random">
+					              <img src="https://picsum.photos/206?random">
+					              <img src="https://picsum.photos/207?random">
+					              <img src="https://picsum.photos/208?random">
+					              <img src="https://picsum.photos/209?random">
+					              <img src="https://picsum.photos/210?random">
+					            </div>
+					            <p class="showmorebtn">show more...</p>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+							<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+							<p class="track-title">1. NEW YORK STREET 20:11</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
+							<img class="favorite" src="img/favorite-border.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> bootleg &nbsp;|&nbsp; freefolk &nbsp;|&nbsp; jam</p>
+						</div>
 					</div>
 				</div>
+				
 			</div>
 
 
@@ -648,6 +1535,7 @@
 		</div>
 	</footer>
 	<script src="js/feed_misc.js"></script>
+	<script src="js/feed-tabs.js"></script>
 </body>
 
 </html>
