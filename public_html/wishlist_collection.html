@@ -26,7 +26,8 @@
 					<li>
 						<a href="feed.html" class="hdr_btn">feed</a>
 					</li>
-					<li>[search]</li>
+					<!-- search icon source: https://upload.wikimedia.org/wikipedia/commons/7/7e/Vector_search_icon.svg -->
+					<li><form><input type="text" placeholder="search" class="searchbar"><img src="img/search.svg" class="searchbar-icon"></form></li>
 				</ul>
 				<ul class="hdr_user_nav">
 					<li>
@@ -44,31 +45,472 @@
 		<div class="profile content-box">
 			<div class="pic"><img src="img/thisPicIsFreaky.jpg"></div>
 			<div class="labels">
-				<h2>User Name</h2>
-				<h4>Subtitle</h4>
+				<h2 id="orig-name">.rmichels.</h2>
+				<h4 id="orig-bio">I like music</h4>
+				<form class="edit-form">
+					<input type="text" placeholder="User Name" id="edit-name" class="hidden"><br>
+					<input type="text" placeholder="Bio" id="edit-bio" class="hidden">
+				</form>
 			</div>
 			<div class="edit-labels">
-				<a class="button-primary" href="javascript:void(0)">Edit</a>
+				<a class="button-primary" href="javascript:void(0)" id="edit-btn">Edit</a>
 				<a class="button-primary" href="javascript:void(0)">Share</a>
 			</div>
 		</div>
 		<div class="menu content-box">
 			<div>
-				<a class="button-primary" href="javascript:void(0)" id="btn-collection">Collection</a>
-				<a class="button-primary" href="javascript:void(0)" id="btn-wishlist">Wishlist</a>
+				<a class="button-tab" href="javascript:void(0)" id="btn-collection">Collection</a>
+				<a class="button-tab" href="javascript:void(0)" id="btn-wishlist">Wishlist</a>
 			</div>
-			<div>
-				<p>Search | Genre | Alphabetical | Purchase Date | Archive</p>
+			<div class="manipulate-list">
+				<!-- search icon source: https://upload.wikimedia.org/wikipedia/commons/7/7e/Vector_search_icon.svg -->
+				<form><input type="text" placeholder="search" class="searchbar"><img src="img/search.svg" class="searchbar-icon"></form>
+				<p>sort by: <span class="manibulate-btn genre">Genre</span> | <span class="manibulate-btn alphabetical">Alphabetical</span> | <span class="manibulate-btn date">Purchase Date</span></p><p class="archive-btn">jump to: <a href="#archive">Archive</a></p>
+			</div>
+
+			<div class="w_c-tab-content main-feed">
+				<!--############################################################################################-->
+				<!------------------------------------------ COLLECTION ------------------------------------------>
+				<!--############################################################################################-->
+				<div id="content-collection">
+					<h2 class="content-title">Collection</h2>
+					<div class="w_c-grid">
+						<div class="content-box"> <!-- Feed Tile 1 -->
+							<div>
+								<div class="content-box album-art">
+									<div class="overlay-container feed-tile">
+										<img class="image-fit album" src="img/albumart1.jpg">
+										<div class="overlay-background"></div>
+										<div class="overlay-content">
+											<a href="product_page.html"><h2>Into the Light</h2></a>
+											<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+											<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+											<div class="album-music-controls">
+												<img class="skip-prev" src="img/skip-prev.png">
+												<img class="play-arrow" src="img/play-arrow.png">
+												<img class="skip-next" src="img/skip-next.png">
+											</div>
+											<p class="track-title">3. Waltz of Shadows 3:12</p>
+											<div class="button-container">
+												<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+												<a class="album-card-button download" href="javascript:void(0)">Download</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hidden-details">
+								<a href="product_page.html"><h2>Into the Light</h2></a>
+								<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+								<p class="track-title">3. Waltz of Shadows 3:12</p>
+							</div>
+							<div class="hidden-button-container pushMeDown">
+								<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+								<a class="button-primary download" href="javascript:void(0)">Download</a>
+							</div>
+							<div class="hidden-tags">
+								<p><strong>tags:</strong> cinematic &nbsp;|&nbsp; experimental&nbsp;|&nbsp; guitar</p>
+							</div>
+						</div>
+
+
+						<div class="content-box"> <!-- Feed Tile 2 -->
+							<div>
+								<div class="content-box album-art">
+									<div class="overlay-container feed-tile">
+									<!-- Album Art from: https://f4.bcbits.com/img/a3659944552_16.jpg -->
+										<img class="image-fit album" src="img/albumart2.jpg">
+										<div class="overlay-background"></div>
+										<div class="overlay-content">
+											<a href="product_page.html"><h2 class="makeMeSmall">Blood Moon Boulder</h2></a>
+											<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+											<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+											<div class="album-music-controls">
+												<img class="skip-prev" src="img/skip-prev.png">
+												<img class="play-arrow" src="img/play-arrow.png">
+												<img class="skip-next" src="img/skip-next.png">
+											</div>
+											<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+											<div class="button-container">
+												<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+												<a class="album-card-button download" href="javascript:void(0)">Download</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+							<div class="hidden-details">
+								<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
+								<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+								<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+							</div>
+							<div class="hidden-button-container">
+								<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+								<a class="button-primary download" href="javascript:void(0)">Download</a>
+							</div>
+							<div class="hidden-tags">
+								<p><strong>tags:</strong> experimental &nbsp;|&nbsp; american primitive &nbsp;|&nbsp; drone &nbsp;|&nbsp; electronic &nbsp;|&nbsp; folk &nbsp;|&nbsp; Tulsa</p>
+							</div>
+						</div>
+
+						<div class="content-box"> <!-- Feed Tile 3 -->
+						<div>
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a4119895710_16.jpg -->
+									<img class="image-fit album" src="img/albumart3.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>The Morning Star</h2></a>
+										<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">7. New Moon 13:38</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Download</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>The Morning Star</h2></a>
+							<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+							<p class="track-title">7. New Moon 13:38</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Download</a>
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> experimental &nbsp;|&nbsp; john fahey &nbsp;|&nbsp; three loved recordings &nbsp;|&nbsp; acoustic guitar &nbsp;|&nbsp; american primitive
+							 &nbsp;|&nbsp; guitar &nbsp;|&nbsp; psychedelic</p>
+						</div>
+					</div>
+
+					<div class="content-box"> <!-- Feed Tile 4 -->
+						<div>
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a1252748894_10.jpg -->
+									<img class="image-fit album" src="img/albumart4.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+										<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">1. NEW YORK STREET 20:11</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Download</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+							<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+							<p class="track-title">1. NEW YORK STREET 20:11</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Download</a>
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> bootleg &nbsp;|&nbsp; freefolk &nbsp;|&nbsp; jam</p>
+						</div>
+					</div>
+					</div>
+					<div id="archive"></div>
+					<!--------------------------------------- Collection: Archive ----------------------->
+					<h4 class="archive-seperator">Archive</h4>
+
+					<div class="w_c-grid">
+						<div class="content-box"> <!-- Feed Tile 5 -->
+						<div>
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a1807425984_16.jpg-->
+									<img class="image-fit album" src="img/albumart5.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>Mercury</h2></a>
+										<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">1. The New Country 1:46</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Download</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>Mercury</h2></a>
+							<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+							<p class="track-title">1. The New Country 1:46</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Download</a>
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> americana &nbsp;|&nbsp; experimental &nbsp;|&nbsp; instrumental &nbsp;|&nbsp; takoma &nbsp;|&nbsp; americana lofi &nbsp;|&nbsp; folk
+							 &nbsp;|&nbsp; roots &nbsp;|&nbsp; Portland</p>
+						</div>
+					</div>
+					</div>
+
+
+				</div>
+
+
+				<!--############################################################################################-->
+				<!------------------------------------------- WISHLIST ------------------------------------------->
+				<!--############################################################################################-->
+				<div id="content-wishlist">
+					<h2 class="content-title">Wishlist</h2>
+					<div class="w_c-grid">
+						<div class="content-box"> <!-- Feed Tile 5 -->
+							<div>
+								<div class="content-box album-art">
+									<div class="overlay-container feed-tile">
+									<!-- Album Art from: https://f4.bcbits.com/img/a1807425984_16.jpg-->
+										<img class="image-fit album" src="img/albumart5.jpg">
+										<div class="overlay-background"></div>
+										<div class="overlay-content">
+											<a href="product_page.html"><h2>Mercury</h2></a>
+											<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+											<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+											<div class="album-music-controls">
+												<img class="skip-prev" src="img/skip-prev.png">
+												<img class="play-arrow" src="img/play-arrow.png">
+												<img class="skip-next" src="img/skip-next.png">
+											</div>
+											<p class="track-title">1. The New Country 1:46</p>
+											<div class="button-container">
+												<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+												<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 8$</a>
+												<img class="favorite" src="img/favorite-fill.png">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hidden-details">
+								<a href="product_page.html"><h2>Mercury</h2></a>
+								<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+								<p class="track-title">1. The New Country 1:46</p>
+							</div>
+							<div class="hidden-button-container">
+								<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+								<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 8$</a>
+								<img class="favorite" src="img/favorite-fill.png">
+							</div>
+							<div class="hidden-tags">
+								<p><strong>tags:</strong> americana &nbsp;|&nbsp; experimental &nbsp;|&nbsp; instrumental &nbsp;|&nbsp; takoma &nbsp;|&nbsp; americana lofi &nbsp;|&nbsp; folk
+								 &nbsp;|&nbsp; roots &nbsp;|&nbsp; Portland</p>
+							</div>
+						</div>
+						<div class="content-box"> <!-- Feed Tile 4 -->
+						<div>
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a1252748894_10.jpg -->
+									<img class="image-fit album" src="img/albumart4.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+										<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">1. NEW YORK STREET 20:11</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
+											<img class="favorite" src="img/favorite-fill.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hidden-details">
+							<a href="product_page.html"><h2>LIVIN' THE DIE</h2></a>
+							<a href="javascript:void(0)"><h4>WET TUNA</h4></a>
+							<p class="track-title">1. NEW YORK STREET 20:11</p>
+						</div>
+						<div class="hidden-button-container">
+							<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+							<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
+							<img class="favorite" src="img/favorite-fill.png">
+						</div>
+						<div class="hidden-tags">
+							<p><strong>tags:</strong> bootleg &nbsp;|&nbsp; freefolk &nbsp;|&nbsp; jam</p>
+						</div>
+					</div>
+
+
+
+					</div>	
+					<div class="archive-id"></div>
+					<!--------------------------------------- Collection: Archive ----------------------->
+					<h4 class="archive-seperator">Archive</h4>
+					<div class="w_c-grid">
+
+						<div class="content-box"> <!-- Feed Tile 1 -->
+							<div>
+								<div class="content-box album-art">
+									<div class="overlay-container feed-tile">
+										<img class="image-fit album" src="img/albumart1.jpg">
+										<div class="overlay-background"></div>
+										<div class="overlay-content">
+											<a href="product_page.html"><h2>Into the Light</h2></a>
+											<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+											<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+											<div class="album-music-controls">
+												<img class="skip-prev" src="img/skip-prev.png">
+												<img class="play-arrow" src="img/play-arrow.png">
+												<img class="skip-next" src="img/skip-next.png">
+											</div>
+											<p class="track-title">3. Waltz of Shadows 3:12</p>
+											<div class="button-container">
+												<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+												<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 12$</a>
+												<img class="favorite" src="img/favorite-fill.png">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="hidden-details">
+								<a href="product_page.html"><h2>Into the Light</h2></a>
+								<a href="javascript:void(0)"><h4>Marisa Anderson</h4></a>
+								<p class="track-title">3. Waltz of Shadows 3:12</p>
+							</div>
+							<div class="hidden-button-container pushMeDown">
+								<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+								<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 12$</a>
+								<img class="favorite" src="img/favorite-fill.png">
+							</div>
+							<div class="hidden-tags">
+								<p><strong>tags:</strong> cinematic &nbsp;|&nbsp; experimental&nbsp;|&nbsp; guitar</p>
+							</div>
+						</div>
+
+
+						<div class="content-box"> <!-- Feed Tile 2 -->
+							<div>
+								<div class="content-box album-art">
+									<div class="overlay-container feed-tile">
+									<!-- Album Art from: https://f4.bcbits.com/img/a3659944552_16.jpg -->
+										<img class="image-fit album" src="img/albumart2.jpg">
+										<div class="overlay-background"></div>
+										<div class="overlay-content">
+											<a href="product_page.html"><h2 class="makeMeSmall">Blood Moon Boulder</h2></a>
+											<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+											<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+											<div class="album-music-controls">
+												<img class="skip-prev" src="img/skip-prev.png">
+												<img class="play-arrow" src="img/play-arrow.png">
+												<img class="skip-next" src="img/skip-next.png">
+											</div>
+											<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+											<div class="button-container">
+												<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+												<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 9$</a>
+												<img class="favorite" src="img/favorite-fill.png">
+											</div>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+							<div class="hidden-details">
+								<a href="product_page.html"><h2>Blood Moon Boulder</h2></a>
+								<a href="javascript:void(0)"><h4>Chuck Johnson</h4></a>
+								<p class="track-title">2. Silver Teeth in the Sun 5:49</p>
+							</div>
+							<div class="hidden-button-container">
+								<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+								<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 9$</a>
+								<img class="favorite" src="img/favorite-fill.png">
+							</div>
+							<div class="hidden-tags">
+								<p><strong>tags:</strong> experimental &nbsp;|&nbsp; american primitive &nbsp;|&nbsp; drone &nbsp;|&nbsp; electronic &nbsp;|&nbsp; folk &nbsp;|&nbsp; Tulsa</p>
+							</div>
+						</div>
+
+						<div class="content-box"> <!-- Feed Tile 3 -->
+						<div>
+							<div class="content-box album-art">
+								<div class="overlay-container feed-tile">
+								<!-- Album Art from: https://f4.bcbits.com/img/a4119895710_16.jpg -->
+									<img class="image-fit album" src="img/albumart3.jpg">
+									<div class="overlay-background"></div>
+									<div class="overlay-content">
+										<a href="product_page.html"><h2>The Morning Star</h2></a>
+										<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+										<!--Icons from https://material.io/tools/icons/?search=play&icon=play_arrow&style=baseline -->
+										<div class="album-music-controls">
+											<img class="skip-prev" src="img/skip-prev.png">
+											<img class="play-arrow" src="img/play-arrow.png">
+											<img class="skip-next" src="img/skip-next.png">
+										</div>
+										<p class="track-title">7. New Moon 13:38</p>
+										<div class="button-container">
+											<a class="album-card-button" href="javascript:void(0)">Why do you love this album?</a>
+											<a class="album-card-button download" href="javascript:void(0)">Purchase - starting at 10$</a>
+											<img class="favorite" src="img/favorite-fill.png">
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="hidden-details">
+								<a href="product_page.html"><h2>The Morning Star</h2></a>
+								<a href="javascript:void(0)"><h4>Daniel Bachman</h4></a>
+								<p class="track-title">7. New Moon 13:38</p>
+							</div>
+							<div class="hidden-button-container">
+								<a class="button-primary" href="javascript:void(0)">Why do you love this album?</a>
+								<a class="button-primary download" href="javascript:void(0)">Purchase - starting at 10$</a>
+								<img class="favorite" src="img/favorite-fill.png">
+							</div>
+							<div class="hidden-tags">
+								<p><strong>tags:</strong> experimental &nbsp;|&nbsp; john fahey &nbsp;|&nbsp; three loved recordings &nbsp;|&nbsp; acoustic guitar &nbsp;|&nbsp; american primitive
+								 &nbsp;|&nbsp; guitar &nbsp;|&nbsp; psychedelic</p>
+							</div>
+						</div>
+
+					</div>	
+				</div>
+
+
 			</div>
 		</div>
-		<div class="content-box" id="content-collection">
-			<h2>Collection</h2>
-			<h4 class="archive-seperator">Archive</h4>
-		</div>
-		<div class="content-box" id="content-wishlist">
-			<h2>Wishlist</h2>
-			<h4 class="archive-seperator">Archive</h4>
-		</div>
+		
 	</div>
 
 	<footer>
@@ -86,6 +528,8 @@
 		</div>
 	</footer>
 	<script src="js/w_c_tabs.js"></script>
+	<script src="js/w_c-edit-user.js"></script>
+	<script src="js/w_c-misc.js"></script>
 </body>
 
 </html>
